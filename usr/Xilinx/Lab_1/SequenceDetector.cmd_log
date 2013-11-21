@@ -1,0 +1,37 @@
+xst -ise "C:/usr/Xilinx/Lab_1/Lab1.ise" -intstyle ise -ifn SequenceDetector.xst -ofn SequenceDetector.syr
+xst -ise "C:/usr/Xilinx/Lab_1/Lab1.ise" -intstyle ise -ifn SequenceDetector.xst -ofn SequenceDetector.syr
+xst -ise "C:/usr/Xilinx/Lab_1/Lab1.ise" -intstyle ise -ifn SequenceDetector.xst -ofn SequenceDetector.syr
+xst -ise "C:/usr/Xilinx/Lab_1/Lab1.ise" -intstyle ise -ifn SequenceDetector.xst -ofn SequenceDetector.syr
+xst -ise "C:/usr/Xilinx/Lab_1/Lab1.ise" -intstyle ise -ifn SequenceDetector.xst -ofn SequenceDetector.syr
+xst -ise "C:/usr/Xilinx/Lab_1/Lab1.ise" -intstyle ise -ifn SequenceDetector.xst -ofn SequenceDetector.syr
+ngdbuild -ise "C:/usr/Xilinx/Lab_1/Lab1.ise" -intstyle ise -dd _ngo -nt timestamp -uc "SequenceDetector.ucf" -p xc3s500e-fg320-4 "SequenceDetector.ngc" SequenceDetector.ngd
+map -ise "C:/usr/Xilinx/Lab_1/Lab1.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr b -k 4 -c 100 -o SequenceDetector_map.ncd SequenceDetector.ngd SequenceDetector.pcf
+par -ise "C:/usr/Xilinx/Lab_1/Lab1.ise" -w -intstyle ise -ol std -t 1 SequenceDetector_map.ncd SequenceDetector.ncd SequenceDetector.pcf
+trce -ise "C:/usr/Xilinx/Lab_1/Lab1.ise" -intstyle ise -e 3 -s 4 -xml SequenceDetector SequenceDetector.ncd -o SequenceDetector.twr SequenceDetector.pcf -ucf SequenceDetector.ucf
+bitgen -ise "C:/usr/Xilinx/Lab_1/Lab1.ise" -intstyle ise -f SequenceDetector.ut SequenceDetector.ncd
+bitgen -ise "C:/usr/Xilinx/Lab_1/Lab1.ise" -intstyle ise -f SequenceDetector.ut SequenceDetector.ncd
+ngdbuild -ise "C:/usr/Xilinx/Lab_1/Lab1.ise" -intstyle ise -dd _ngo -nt timestamp -uc "SequenceDetector.ucf" -p xc3s500e-fg320-4 "SequenceDetector.ngc" SequenceDetector.ngd
+map -ise "C:/usr/Xilinx/Lab_1/Lab1.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr b -k 4 -c 100 -o SequenceDetector_map.ncd SequenceDetector.ngd SequenceDetector.pcf
+par -ise "C:/usr/Xilinx/Lab_1/Lab1.ise" -w -intstyle ise -ol std -t 1 SequenceDetector_map.ncd SequenceDetector.ncd SequenceDetector.pcf
+trce -ise "C:/usr/Xilinx/Lab_1/Lab1.ise" -intstyle ise -e 3 -s 4 -xml SequenceDetector SequenceDetector.ncd -o SequenceDetector.twr SequenceDetector.pcf -ucf SequenceDetector.ucf
+bitgen -ise "C:/usr/Xilinx/Lab_1/Lab1.ise" -intstyle ise -f SequenceDetector.ut SequenceDetector.ncd
+xst -ise "C:/usr/Xilinx/Lab_1/Lab1.ise" -intstyle ise -ifn SequenceDetector.xst -ofn SequenceDetector.syr
+ngdbuild -ise "C:/usr/Xilinx/Lab_1/Lab1.ise" -intstyle ise -dd _ngo -nt timestamp -uc "SequenceDetector.ucf" -p xc3s500e-fg320-4 "SequenceDetector.ngc" SequenceDetector.ngd
+map -ise "C:/usr/Xilinx/Lab_1/Lab1.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr b -k 4 -c 100 -o SequenceDetector_map.ncd SequenceDetector.ngd SequenceDetector.pcf
+par -ise "C:/usr/Xilinx/Lab_1/Lab1.ise" -w -intstyle ise -ol std -t 1 SequenceDetector_map.ncd SequenceDetector.ncd SequenceDetector.pcf
+trce -ise "C:/usr/Xilinx/Lab_1/Lab1.ise" -intstyle ise -e 3 -s 4 -xml SequenceDetector SequenceDetector.ncd -o SequenceDetector.twr SequenceDetector.pcf -ucf SequenceDetector.ucf
+bitgen -ise "C:/usr/Xilinx/Lab_1/Lab1.ise" -intstyle ise -f SequenceDetector.ut SequenceDetector.ncd
+xst -ise "C:/usr/Xilinx/Lab_1/Lab1.ise" -intstyle ise -ifn SequenceDetector.xst -ofn SequenceDetector.syr
+ngdbuild -ise "C:/usr/Xilinx/Lab_1/Lab1.ise" -intstyle ise -dd _ngo -nt timestamp -uc "SequenceDetector.ucf" -p xc3s500e-fg320-4 "SequenceDetector.ngc" SequenceDetector.ngd
+ngdbuild -ise "C:/usr/Xilinx/Lab_1/Lab1.ise" -intstyle ise -dd _ngo -nt timestamp -uc "SequenceDetector.ucf" -p xc3s500e-fg320-4 "SequenceDetector.ngc" SequenceDetector.ngd
+ngdbuild -ise "C:/usr/Xilinx/Lab_1/Lab1.ise" -intstyle ise -dd _ngo -nt timestamp -uc "SequenceDetector.ucf" -p xc3s500e-fg320-4 "SequenceDetector.ngc" SequenceDetector.ngd
+map -ise "C:/usr/Xilinx/Lab_1/Lab1.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr b -k 4 -c 100 -o SequenceDetector_map.ncd SequenceDetector.ngd SequenceDetector.pcf
+par -ise "C:/usr/Xilinx/Lab_1/Lab1.ise" -w -intstyle ise -ol std -t 1 SequenceDetector_map.ncd SequenceDetector.ncd SequenceDetector.pcf
+trce -ise "C:/usr/Xilinx/Lab_1/Lab1.ise" -intstyle ise -e 3 -s 4 -xml SequenceDetector SequenceDetector.ncd -o SequenceDetector.twr SequenceDetector.pcf -ucf SequenceDetector.ucf
+bitgen -ise "C:/usr/Xilinx/Lab_1/Lab1.ise" -intstyle ise -f SequenceDetector.ut SequenceDetector.ncd
+xst -ise "C:/usr/Xilinx/Lab_1/Lab1.ise" -intstyle ise -ifn SequenceDetector.xst -ofn SequenceDetector.syr
+ngdbuild -ise "C:/usr/Xilinx/Lab_1/Lab1.ise" -intstyle ise -dd _ngo -nt timestamp -uc "SequenceDetector.ucf" -p xc3s500e-fg320-4 "SequenceDetector.ngc" SequenceDetector.ngd
+map -ise "C:/usr/Xilinx/Lab_1/Lab1.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr b -k 4 -c 100 -o SequenceDetector_map.ncd SequenceDetector.ngd SequenceDetector.pcf
+par -ise "C:/usr/Xilinx/Lab_1/Lab1.ise" -w -intstyle ise -ol std -t 1 SequenceDetector_map.ncd SequenceDetector.ncd SequenceDetector.pcf
+trce -ise "C:/usr/Xilinx/Lab_1/Lab1.ise" -intstyle ise -e 3 -s 4 -xml SequenceDetector SequenceDetector.ncd -o SequenceDetector.twr SequenceDetector.pcf -ucf SequenceDetector.ucf
+bitgen -ise "C:/usr/Xilinx/Lab_1/Lab1.ise" -intstyle ise -f SequenceDetector.ut SequenceDetector.ncd

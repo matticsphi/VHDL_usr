@@ -1,0 +1,57 @@
+V3 34
+FL C:/usr/Xilinx/Daren-Lab2/DataPath.vhd 2009/10/08.14:33:01 J.33
+EN work/DataPath 1255039467 FL C:/usr/Xilinx/Daren-Lab2/DataPath.vhd \
+      PB ieee/std_logic_1164 1173395717 PB ieee/std_logic_arith 1173395718 \
+      PB ieee/STD_LOGIC_UNSIGNED 1173395719
+AR work/DataPath/myDataPath 1255039468 \
+      FL C:/usr/Xilinx/Daren-Lab2/DataPath.vhd EN work/DataPath 1255039467 \
+      CP Eightbit_Register CP Eightbit_Adder CP Eightbit_Mux
+FL "E:/269 Lab 2/8-bit Adder.vhd" 2009/10/08.13:03:40 J.33
+EN work/Eightbit_Adder 1255038498 FL "E:/269 Lab 2/8-bit Adder.vhd" \
+      PB ieee/std_logic_1164 1173395717 PB ieee/std_logic_arith 1173395718 \
+      PB ieee/STD_LOGIC_UNSIGNED 1173395719
+AR work/Eightbit_Adder/allAdd 1255038499 \
+      FL "E:/269 Lab 2/8-bit Adder.vhd" EN work/Eightbit_Adder 1255038498
+FL "E:/269 Lab 2/8-bit Mux.vhd" 2009/10/08.13:17:38 J.33
+EN work/Eightbit_Mux 1255038500 FL "E:/269 Lab 2/8-bit Mux.vhd" \
+      PB ieee/std_logic_1164 1173395717 PB ieee/std_logic_arith 1173395718 \
+      PB ieee/STD_LOGIC_UNSIGNED 1173395719
+AR work/Eightbit_Mux/myMux 1255038501 \
+      FL "E:/269 Lab 2/8-bit Mux.vhd" EN work/Eightbit_Mux 1255038500
+FL "E:/269 Lab 2/8-bit Register.vhd" 2009/10/08.14:36:02 J.33
+EN work/Eightbit_Register 1255038496 FL "E:/269 Lab 2/8-bit Register.vhd" \
+      PB ieee/std_logic_1164 1173395717 PB ieee/std_logic_arith 1173395718 \
+      PB ieee/STD_LOGIC_UNSIGNED 1173395719
+AR work/Eightbit_register/my8bit 1255038497 \
+      FL "E:/269 Lab 2/8-bit Register.vhd" EN work/Eightbit_Register 1255038496
+FL "E:/269 Lab 2/clk_div_fs.vhd" 2009/10/08.12:18:36 J.33
+EN work/clk_div_fs 1255038502 FL "E:/269 Lab 2/clk_div_fs.vhd" \
+      PB ieee/std_logic_1164 1173395717 PB ieee/std_logic_arith 1173395718 \
+      PB ieee/STD_LOGIC_UNSIGNED 1173395719
+AR work/clk_div_fs/my_clk_div 1255038503 \
+      FL "E:/269 Lab 2/clk_div_fs.vhd" EN work/clk_div_fs 1255038502
+FL "E:/269 Lab 2/Control Unit.vhd" 2009/10/08.14:47:52 J.33
+EN work/ControlUnit 1255038504 FL "E:/269 Lab 2/Control Unit.vhd" \
+      PB ieee/std_logic_1164 1173395717 PB ieee/std_logic_arith 1173395718 \
+      PB ieee/STD_LOGIC_UNSIGNED 1173395719
+AR work/ControlUnit/Control 1255038505 \
+      FL "E:/269 Lab 2/Control Unit.vhd" EN work/ControlUnit 1255038504
+FL "E:/269 Lab 2/Simple Computer.vhd" 2009/10/08.14:48:14 J.33
+EN work/SimpleComputer 1255038512 FL "E:/269 Lab 2/Simple Computer.vhd" \
+      PB ieee/std_logic_1164 1173395717 PB ieee/std_logic_arith 1173395718 \
+      PB ieee/STD_LOGIC_UNSIGNED 1173395719
+AR work/SimpleComputer/Behavioral 1255038513 \
+      FL "E:/269 Lab 2/Simple Computer.vhd" EN work/SimpleComputer 1255038512 \
+      CP clk_div_fs CP ControlUnit CP DataPath CP sseg_dec
+FL "E:/269 Lab 2/ssegdec_4disp.vhd" 2009/10/07.20:51:24 J.33
+EN work/sseg_dec 1255038508 FL "E:/269 Lab 2/ssegdec_4disp.vhd" \
+      PB ieee/std_logic_1164 1173395717 PB ieee/std_logic_arith 1173395718 \
+      PB ieee/STD_LOGIC_UNSIGNED 1173395719
+AR work/sseg_dec/my_sseg 1255038509 \
+      FL "E:/269 Lab 2/ssegdec_4disp.vhd" EN work/sseg_dec 1255038508 \
+      CP bin2bcdconv
+EN work/bin2bcdconv 1255038510 \
+      FL "E:/269 Lab 2/ssegdec_4disp.vhd" PB ieee/std_logic_1164 1173395717 \
+      PB ieee/std_logic_arith 1173395718 PB ieee/STD_LOGIC_UNSIGNED 1173395719
+AR work/bin2bcdconv/my_ckt 1255038511 \
+      FL "E:/269 Lab 2/ssegdec_4disp.vhd" EN work/bin2bcdconv 1255038510

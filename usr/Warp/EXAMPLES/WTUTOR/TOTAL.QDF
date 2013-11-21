@@ -1,0 +1,1233 @@
+#
+#	QDIF created directly by Warp vers. 4 IR x56
+#	Thu Mar 28 12:18:33 1996
+#
+QDIF 3
+file p8x12b
+package pl44
+library warp
+  gates 18
+  terms 167
+  ports 281
+    gate LOGICO cell LOGIC
+	term OZ port OZ end
+	term A1 port A1 end
+	term A2 port A2 end
+	term A3 port A3 end
+	term A4 port A4 end
+	term A5 port A5 end
+	term A6 port A6 end
+	term B1 port B1 end
+	term B2 port B2 end
+	term C1 port C1 end
+	term C2 port C2 end
+	term D1 port D1 end
+	term D2 port D2 end
+	term E1 port E1 end
+	term E2 port E2 end
+	term F1 port F1 end
+	term F2 port F2 end
+	term F3 port F3 end
+	term F4 port F4 end
+	term F5 port F5 end
+	term F6 port F6 end
+	term VCC end
+	term GND end
+    end
+   gate PALCELL cell LOGIC
+     term A1 port A1 end
+     term A2 port A2 end
+     term A3 port A3 end
+     term A4 port A4 end
+     term A5 port A5 end
+     term A6 port A6 end
+     term B1 port B1 end
+     term B2 port B2 end
+     term C1 port C1 end
+     term C2 port C2 end
+     term D1 port D1 end
+     term D2 port D2 end
+     term E1 port E1 end
+     term E2 port E2 end
+     term F1 port F1 end
+     term F2 port F2 end
+     term F3 port F3 end
+     term F4 port F4 end
+     term F5 port F5 end
+     term F6 port F6 end
+     term QC port QC end
+     term QR port QR end
+     term QS port QS end
+     term AZ port OS port AZ end
+     term FZ port FZ port NS end
+     term NZ port NZ end
+     term OZ port QD port OZ end
+     term QZ port QZ end
+     term VCC end
+     term GND end
+  end
+   gate PPALCELL cell LOGIC
+     term A1 port A1 end
+     term A2 port A2 end
+     term A3 port A3 end
+     term A4 port A4 end
+     term A5 port A5 end
+     term A6 port A6 end
+     term B1 port B1 end
+     term B2 port B2 end
+     term C1 port C1 end
+     term C2 port C2 end
+     term D1 port D1 end
+     term D2 port D2 end
+     term E1 port E1 end
+     term E2 port E2 end
+     term F1 port F1 end
+     term F2 port F2 end
+     term F3 port F3 end
+     term F4 port F4 end
+     term F5 port F5 end
+     term F6 port F6 end
+     term QC port QC end
+     term QR port QR end
+     term QS port QS end
+     term AZ port OS port AZ end
+     term FZ port FZ port NS end
+     term NZ port NZ end
+     term OZ port QD port OZ end
+     term QZ port QZ end
+     term VCC end
+     term GND end
+  end
+  gate PAINCELL cell INPUT
+     term IP port IP end
+     term INI port IN end
+     term IZ port IZ end
+  end
+  gate PACKCELL cell CLOCK
+     term IP port IP end
+     term INI port IN end
+     term IZ port IZ end
+     term IC port IC end
+  end
+  gate PABICELL cell BIDIR
+     term I1 port I1 end
+     term I2 port I2 end
+     term IE port IE end
+     term IP port IP end
+     term IZ port IZ end
+     term VCC end
+     term GND end
+  end
+  gate MUX1X2 cell LOGIC
+     term S0 port F1 end
+     term A0 port D1 end
+     term A0I port D2 end
+     term A1 port E1 end
+     term A1I port E2 end
+     term Q port NZ end
+     term GND port F2 port F4 port F6 end
+     term VCC port F3 port F5 end
+  end
+  gate MUX2X4 cell LOGIC
+     term S0 port F1 end
+     term S1 port A1 end
+     term A0 port B1 end
+     term A0I port B2 end
+     term A1 port C1 end
+     term A1I port C2 end
+     term A2 port D1 end
+     term A2I port D2 end
+     term A3 port E1 end
+     term A3I port E2 end
+     term Q port OZ end
+     term GND port A2 port A4 port A6 port F2 port F4 port F6 end
+     term VCC port A3 port A5 port F3 port F5 end
+  end
+  gate XOR2 cell LOGIC
+     term A1 port D2 end
+     term A2 port E1 end
+     term B port F2 end
+     term Q port NZ end
+     term GND port A2 port A4 port A6 port B2 port C2 port E2 port F4 port F6 end
+     term VCC port A1 port A3 port A5 port B1 port C1 port D1 port F1 port F3 port F5 end
+  end
+  gate XOR2I1 cell LOGIC
+     term A1I port D1 end
+     term A2I port E2 end
+     term B port F2 end
+     term Q port NZ end
+     term GND port A2 port A4 port A6 port B2 port C2 port D2 port F4 port F6 end
+     term VCC port A1 port A3 port A5 port B1 port C1 port E1 port F1 port F3 port F5 end
+  end
+  gate XOR2I2 cell LOGIC
+     term A1I port D1 end
+     term A2I port E2 end
+     term BI port F1 end
+     term Q port NZ end
+     term GND port A2 port A4 port A6 port B2 port C2 port D2 port F2 port F4 port F6 end
+     term VCC port A1 port A3 port A5 port B1 port C1 port E1 port F3 port F5 end
+  end
+  gate PAFRAG_Q cell LOGIC
+     term QZ port QZ end
+     term QC port QC end
+     term QS port QS end
+     term QR port QR end
+     term QD port E1 end
+     term VCC port F5 port F3 port F1 port D1 port C1 port B1 port A5 port A3 port A1 end
+     term GND port F6 port F4 port F2 port E2 port D2 port C2 port B2 port A6 port A4 port A2 end
+  end
+  gate DSRFF cell LOGIC
+     term S port QS end
+     term CLK port QC end
+     term R port QR end
+     term D port E1 end
+     term Q port QZ end
+     term VCC port F5 port F3 port F1 port D1 port C1 port B1 port A5 port A3 port A1 end
+     term GND port F6 port F4 port F2 port E2 port D2 port C2 port B2 port A6 port A4 port A2 end
+  end
+  gate DFF cell LOGIC
+     term CLK port QC end
+     term D port E1 end
+     term Q port QZ end
+     term VCC port F5 port F3 port F1 port D1 port C1 port B1 port A5 port A3 port A1 end
+     term GND port F6 port F4 port F2 port E2 port D2 port C2 port B2 port A6 port A4 port A2 port QS port QR end
+  end
+  gate PAFRAG_M cell LOGIC
+     term VCC port A3 port A5 port F3 port F5 end
+     term GND port A2 port A4 port A6 port F2 port F4 port F6 end
+     term OS port A1 end
+     term NSI port F1 end
+     term B1 port B1 end
+     term B2 port B2 end
+     term C1 port C1 end
+     term C2 port C2 end
+     term D1 port D1 end
+     term D2 port D2 end
+     term E1 port E1 end
+     term E2 port E2 end
+     term OZ port OZ end
+     term NZ port NZ end
+  end
+     
+  gate PAFRAG_A cell LOGIC
+     term A1 port A1 end
+     term A2 port A2 end
+     term A3 port A3 end
+     term A4 port A4 end
+     term A5 port A5 end
+     term A6 port A6 end
+     term AZ port AZ end
+  end
+  gate PAFRAG_F cell LOGIC
+     term F1 port F1 end
+     term F2 port F2 end
+     term F3 port F3 end
+     term F4 port F4 end
+     term F5 port F5 end
+     term F6 port F6 end
+     term FZ port FZ end
+  end
+  gate AND6I3 cell LOGIC
+     term A1 port A1 end
+     term A1I port A2 end
+     term A2 port A3 end
+     term A2I port A4 end
+     term A3 port A5 end
+     term A3I port A6 end
+     term Q port AZ end
+  end
+  gate AND4I2 cell LOGIC
+     term GND port A6 end
+     term VCC port A5 end
+     term A1 port A1 end
+     term A1I port A2 end
+     term A2 port A3 end
+     term A2I port A4 end
+     term Q port AZ end
+  end
+end
+logical QDIF
+	gates 75
+	nets 96
+	gate RESET_IOPAD master PABICELL end
+	gate CAR_ENTER_IOPAD master PABICELL end
+	gate COUNT1_4_IOPAD master PABICELL end
+	gate COUNT1_4 master DSRFF end
+	gate COUNT1_3_IOPAD master PABICELL end
+	gate COUNT1_3 master DSRFF end
+	gate COUNT1_2_IOPAD master PABICELL end
+	gate COUNT1_2 master DSRFF end
+	gate COUNT1_1_IOPAD master PABICELL end
+	gate COUNT1_1 master DSRFF end
+	gate COUNT1_0_IOPAD master PABICELL end
+	gate COUNT1_0 master DSRFF end
+	gate CAR_EXIT_IOPAD master PABICELL end
+	gate COUNT2_4_IOPAD master PABICELL end
+	gate COUNT2_4 master DSRFF end
+	gate COUNT2_3_IOPAD master PABICELL end
+	gate COUNT2_3 master DSRFF end
+	gate COUNT2_2_IOPAD master PABICELL end
+	gate COUNT2_2 master DSRFF end
+	gate COUNT2_1_IOPAD master PABICELL end
+	gate COUNT2_1 master DSRFF end
+	gate COUNT2_0_IOPAD master PABICELL end
+	gate COUNT2_0 master DSRFF end
+	gate COUNTER1_MODULE_1_S0_G1_U0_GS_4_S0_U0 master PAFRAG_A end
+	gate COUNTER1_MODULE_1_S0_G1_U0_GS_3_G3_U4_U34 master PPALCELL pack end
+	gate COUNTER1_MODULE_1_S0_G1_U0_GS_3_S0_U0 master PAFRAG_A end
+	gate COUNTER1_MODULE_1_S0_G1_U0_GS_2_G2_U2_NDT_U2 master PAFRAG_A end
+	gate COUNTER1_MODULE_1_S0_G1_U0_GS_2_S0_U0 master PAFRAG_A end
+	gate COUNTER1_MODULE_1_S0_G1_U0_GS_1_S0_U0 master PAFRAG_A end
+	gate COUNTER1_MODULE_1_S0_G1_U0_GS_0_S0_U0 master PAFRAG_A end
+	gate COUNTER2_MODULE_1_S0_G1_U0_GS_4_S0_U0 master PAFRAG_A end
+	gate COUNTER2_MODULE_1_S0_G1_U0_GS_3_G3_U4_U34 master PPALCELL pack end
+	gate COUNTER2_MODULE_1_S0_G1_U0_GS_3_S0_U0 master PAFRAG_A end
+	gate COUNTER2_MODULE_1_S0_G1_U0_GS_2_G2_U2_NDT_U2 master PAFRAG_A end
+	gate COUNTER2_MODULE_1_S0_G1_U0_GS_2_S0_U0 master PAFRAG_A end
+	gate COUNTER2_MODULE_1_S0_G1_U0_GS_1_S0_U0 master PAFRAG_A end
+	gate MODULE_2_U0_GQS_GS_U0_G02_GC_GNC_SC master PPALCELL pack end
+	gate TOTAL_0_IOPAD master PABICELL end
+	gate MODULE_2_U0_GQS_GS_U0_G02_GC_GNC_SS master LOGICO end
+	gate TOTAL_1_IOPAD master PABICELL end
+	gate MODULE_2_U0_GQS_GS_U0_G02_G1_S1 master LOGICO end
+	gate MODULE_2_U0_GQS_GS_U0_G02_G2_B1 master PAFRAG_A end
+	gate MODULE_2_U0_GQS_GS_U0_G02_G2_X2 master PPALCELL pack end
+	gate TOTAL_2_IOPAD master PABICELL end
+	gate MODULE_2_U0_GQS_GS_U0_G02_G2_GS2 master LOGICO end
+	gate MODULE_2_U0_GQS_GS_U0_G02_G3_X3 master PPALCELL pack end
+	gate TOTAL_3_IOPAD master PABICELL end
+	gate MODULE_2_U0_GQS_GS_U0_G02_G3_GS3 master LOGICO end
+	gate MODULE_2_U0_GQS_GS_U0_G02_G4_GC3 master PPALCELL pack end
+	gate MODULE_2_U0_GQS_GS_U0_G02_G4_B3 master PAFRAG_F end
+	gate MODULE_2_U0_GQS_GS_U0_G02_G4_X5 master PPALCELL pack end
+	gate MODULE_2_U0_GQS_GS_U0_G02_G4_MA master PPALCELL pack end
+	gate MODULE_2_U0_GQS_GS_U0_G02_G4_MB master PPALCELL pack end
+	gate TOTAL_4_IOPAD master PABICELL end
+	gate MODULE_2_U0_GQS_GS_U0_G02_G4_GS4 master LOGICO end
+	gate MODULE_4_U0_GEQ_0_E_U0_U1 master PPALCELL pack end
+	gate MODULE_4_U0_GEQ_1_E_U0_U1 master PPALCELL pack end
+	gate MODULE_4_U0_GEQ_2_O_U0_U1 master PPALCELL pack end
+	gate LOT_FULL_IOPAD master PABICELL end
+	gate MODULE_4_U0_AG1_0_U1_U1 master LOGICO end
+	gate LOT_EMPTY_QT0 master AND4I2 end
+	gate LOT_EMPTY_QT2 master AND4I2 end
+	gate LOT_EMPTY_QT1 master AND4I2 end
+	gate LOT_EMPTY_OUT master AND4I2 end
+	gate LOT_EMPTY_IOPAD master PABICELL end
+	gate COUNTER1_WARP_ADD_1S1C_SS_MODGEN_3_4 master XOR2 end
+	gate COUNTER1_WARP_ADD_1S1C_SS_MODGEN_3_3 master XOR2 end
+	gate COUNTER1_WARP_ADD_1S1C_SS_MODGEN_3_2 master XOR2 end
+	gate COUNTER1_WARP_ADD_1S1C_SS_MODGEN_3_1 master XOR2 end
+	gate COUNTER1_WARP_ADD_1S1C_SS_MODGEN_3_0 master XOR2 end
+	gate COUNTER2_WARP_ADD_1S1C_SS_MODGEN_3_4 master XOR2 end
+	gate COUNTER2_WARP_ADD_1S1C_SS_MODGEN_3_3 master XOR2 end
+	gate COUNTER2_WARP_ADD_1S1C_SS_MODGEN_3_2 master XOR2 end
+	gate COUNTER2_WARP_ADD_1S1C_SS_MODGEN_3_1 master XOR2 end
+	gate COUNTER2_WARP_ADD_1S1C_SS_MODGEN_3_0 master XOR2 end
+	net CAR_ENTER
+		gate CAR_ENTER_IOPAD term IP end
+	end
+	net CAR_EXIT
+		gate CAR_EXIT_IOPAD term IP end
+	end
+	net RESET
+		gate RESET_IOPAD term IP end
+	end
+	net LOT_EMPTY
+		gate LOT_EMPTY_IOPAD term IP end
+	end
+	net LOT_FULL
+		gate LOT_FULL_IOPAD term IP end
+	end
+	net COUNT1_4
+		gate COUNT1_4_IOPAD term IP end
+	end
+	net COUNT1_3
+		gate COUNT1_3_IOPAD term IP end
+	end
+	net COUNT1_2
+		gate COUNT1_2_IOPAD term IP end
+	end
+	net COUNT1_1
+		gate COUNT1_1_IOPAD term IP end
+	end
+	net COUNT1_0
+		gate COUNT1_0_IOPAD term IP end
+	end
+	net COUNT2_4
+		gate COUNT2_4_IOPAD term IP end
+	end
+	net COUNT2_3
+		gate COUNT2_3_IOPAD term IP end
+	end
+	net COUNT2_2
+		gate COUNT2_2_IOPAD term IP end
+	end
+	net COUNT2_1
+		gate COUNT2_1_IOPAD term IP end
+	end
+	net COUNT2_0
+		gate COUNT2_0_IOPAD term IP end
+	end
+	net TOTAL_4
+		gate TOTAL_4_IOPAD term IP end
+	end
+	net TOTAL_3
+		gate TOTAL_3_IOPAD term IP end
+	end
+	net TOTAL_2
+		gate TOTAL_2_IOPAD term IP end
+	end
+	net TOTAL_1
+		gate TOTAL_1_IOPAD term IP end
+	end
+	net TOTAL_0
+		gate TOTAL_0_IOPAD term IP end
+	end
+	net COUNTER1_WARP_ADD_1S1C_SS_MODGEN_3_4
+		gate COUNT1_4 term D end
+		gate COUNTER1_WARP_ADD_1S1C_SS_MODGEN_3_4 term Q end
+	end
+	net COUNTER1_WARP_ADD_1S1C_SS_MODGEN_3_3
+		gate COUNT1_3 term D end
+		gate COUNTER1_WARP_ADD_1S1C_SS_MODGEN_3_3 term Q end
+	end
+	net COUNTER1_WARP_ADD_1S1C_SS_MODGEN_3_2
+		gate COUNT1_2 term D end
+		gate COUNTER1_WARP_ADD_1S1C_SS_MODGEN_3_2 term Q end
+	end
+	net COUNTER1_WARP_ADD_1S1C_SS_MODGEN_3_1
+		gate COUNT1_1 term D end
+		gate COUNTER1_WARP_ADD_1S1C_SS_MODGEN_3_1 term Q end
+	end
+	net COUNTER1_WARP_ADD_1S1C_SS_MODGEN_3_0
+		gate COUNT1_0 term D end
+		gate COUNTER1_WARP_ADD_1S1C_SS_MODGEN_3_0 term Q end
+	end
+	net COUNTER1_MODULE_1_S0_G1_U0_S_4
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_4_S0_U0 term A5 end
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_3_G3_U4_U34 term NZ end
+	end
+	net COUNTER1_MODULE_1_S0_G1_U0_E_4
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_4_S0_U0 term AZ end
+		gate COUNTER1_WARP_ADD_1S1C_SS_MODGEN_3_4 term B end
+	end
+	net COUNTER1_MODULE_1_S0_G1_U0_S_3
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_3_G3_U4_U34 term FZ end
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_3_S0_U0 term A5 end
+	end
+	net COUNTER1_MODULE_1_S0_G1_U0_E_3
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_3_S0_U0 term AZ end
+		gate COUNTER1_WARP_ADD_1S1C_SS_MODGEN_3_3 term B end
+	end
+	net COUNTER1_MODULE_1_S0_G1_U0_S_2
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_2_G2_U2_NDT_U2 term AZ end
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_2_S0_U0 term A5 end
+	end
+	net COUNTER1_MODULE_1_S0_G1_U0_E_2
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_2_S0_U0 term AZ end
+		gate COUNTER1_WARP_ADD_1S1C_SS_MODGEN_3_2 term B end
+	end
+	net COUNTER1_MODULE_1_S0_G1_U0_E_1
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_1_S0_U0 term AZ end
+		gate COUNTER1_WARP_ADD_1S1C_SS_MODGEN_3_1 term B end
+	end
+	net COUNTER1_MODULE_1_S0_G1_U0_E_0
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_0_S0_U0 term AZ end
+		gate COUNTER1_WARP_ADD_1S1C_SS_MODGEN_3_0 term B end
+		gate COUNTER2_WARP_ADD_1S1C_SS_MODGEN_3_0 term B end
+	end
+	net COUNTER2_WARP_ADD_1S1C_SS_MODGEN_3_4
+		gate COUNT2_4 term D end
+		gate COUNTER2_WARP_ADD_1S1C_SS_MODGEN_3_4 term Q end
+	end
+	net COUNTER2_WARP_ADD_1S1C_SS_MODGEN_3_3
+		gate COUNT2_3 term D end
+		gate COUNTER2_WARP_ADD_1S1C_SS_MODGEN_3_3 term Q end
+	end
+	net COUNTER2_WARP_ADD_1S1C_SS_MODGEN_3_2
+		gate COUNT2_2 term D end
+		gate COUNTER2_WARP_ADD_1S1C_SS_MODGEN_3_2 term Q end
+	end
+	net COUNTER2_WARP_ADD_1S1C_SS_MODGEN_3_1
+		gate COUNT2_1 term D end
+		gate COUNTER2_WARP_ADD_1S1C_SS_MODGEN_3_1 term Q end
+	end
+	net COUNTER2_WARP_ADD_1S1C_SS_MODGEN_3_0
+		gate COUNT2_0 term D end
+		gate COUNTER2_WARP_ADD_1S1C_SS_MODGEN_3_0 term Q end
+	end
+	net COUNTER2_MODULE_1_S0_G1_U0_S_4
+		gate COUNTER2_MODULE_1_S0_G1_U0_GS_4_S0_U0 term A5 end
+		gate COUNTER2_MODULE_1_S0_G1_U0_GS_3_G3_U4_U34 term NZ end
+	end
+	net COUNTER2_MODULE_1_S0_G1_U0_E_4
+		gate COUNTER2_MODULE_1_S0_G1_U0_GS_4_S0_U0 term AZ end
+		gate COUNTER2_WARP_ADD_1S1C_SS_MODGEN_3_4 term B end
+	end
+	net COUNTER2_MODULE_1_S0_G1_U0_S_3
+		gate COUNTER2_MODULE_1_S0_G1_U0_GS_3_G3_U4_U34 term FZ end
+		gate COUNTER2_MODULE_1_S0_G1_U0_GS_3_S0_U0 term A5 end
+	end
+	net COUNTER2_MODULE_1_S0_G1_U0_E_3
+		gate COUNTER2_MODULE_1_S0_G1_U0_GS_3_S0_U0 term AZ end
+		gate COUNTER2_WARP_ADD_1S1C_SS_MODGEN_3_3 term B end
+	end
+	net COUNTER2_MODULE_1_S0_G1_U0_S_2
+		gate COUNTER2_MODULE_1_S0_G1_U0_GS_2_G2_U2_NDT_U2 term AZ end
+		gate COUNTER2_MODULE_1_S0_G1_U0_GS_2_S0_U0 term A5 end
+	end
+	net COUNTER2_MODULE_1_S0_G1_U0_E_2
+		gate COUNTER2_MODULE_1_S0_G1_U0_GS_2_S0_U0 term AZ end
+		gate COUNTER2_WARP_ADD_1S1C_SS_MODGEN_3_2 term B end
+	end
+	net COUNTER2_MODULE_1_S0_G1_U0_E_1
+		gate COUNTER2_MODULE_1_S0_G1_U0_GS_1_S0_U0 term AZ end
+		gate COUNTER2_WARP_ADD_1S1C_SS_MODGEN_3_1 term B end
+	end
+	net MODULE_2_U0_GQS_GS_U0_C0
+		gate MODULE_2_U0_GQS_GS_U0_G02_GC_GNC_SC term AZ end
+		gate MODULE_2_U0_GQS_GS_U0_G02_GC_GNC_SS term F2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G1_S1 term B2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G1_S1 term C1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G1_S1 term D1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G1_S1 term E2 end
+	end
+	net MODULE_2_U0_GQS_GS_U0_C1
+		gate MODULE_2_U0_GQS_GS_U0_G02_GC_GNC_SC term OZ end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G2_B1 term A1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_GC3 term F1 end
+	end
+	net MODULE_2_U0_GQS_GS_U0_A1T
+		gate MODULE_2_U0_GQS_GS_U0_G02_GC_GNC_SC term FZ end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G1_S1 term F1 end
+	end
+	net MODULE_2_U0_GQS_GS_U0_C1X
+		gate MODULE_2_U0_GQS_GS_U0_G02_G2_B1 term AZ end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G2_GS2 term A1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G3_GS3 term A1 end
+	end
+	net MODULE_2_U0_GQS_GS_U0_C02
+		gate MODULE_2_U0_GQS_GS_U0_G02_G2_X2 term AZ end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G3_GS3 term B1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G3_GS3 term C2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_GC3 term A1 end
+	end
+	net MODULE_2_U0_GQS_GS_U0_S2
+		gate MODULE_2_U0_GQS_GS_U0_G02_G2_X2 term OZ end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G2_GS2 term F1 end
+	end
+	net MODULE_2_U0_GQS_GS_U0_C12
+		gate MODULE_2_U0_GQS_GS_U0_G02_G2_X2 term FZ end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G3_GS3 term D2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G3_GS3 term E1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_GC3 term F2 end
+	end
+	net MODULE_2_U0_GQS_GS_U0_C03
+		gate MODULE_2_U0_GQS_GS_U0_G02_G3_X3 term AZ end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_GC3 term B1 end
+	end
+	net MODULE_2_U0_GQS_GS_U0_S3
+		gate MODULE_2_U0_GQS_GS_U0_G02_G3_X3 term OZ end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G3_GS3 term F1 end
+	end
+	net MODULE_2_U0_GQS_GS_U0_C13
+		gate MODULE_2_U0_GQS_GS_U0_G02_G3_X3 term FZ end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_GC3 term C2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_GC3 term D2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_GC3 term E2 end
+	end
+	net MODULE_2_U0_GQS_GS_U0_C3
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_GC3 term OZ end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_B3 term F1 end
+	end
+	net MODULE_2_U0_GQS_GS_U0_C3X
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_B3 term FZ end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_GS4 term F1 end
+	end
+	net MODULE_2_U0_GQS_GS_U0_C05
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_X5 term AZ end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_MA term B1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_MA term D1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_MB term C1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_MB term E1 end
+	end
+	net MODULE_2_U0_GQS_GS_U0_S5
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_X5 term OZ end
+	end
+	net MODULE_2_U0_GQS_GS_U0_C15
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_X5 term FZ end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_MA term C2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_MA term E2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_MB term B2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_MB term D2 end
+	end
+	net MODULE_2_U0_GQS_GS_U0_YA
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_MA term OZ end
+	end
+	net MODULE_2_U0_GQS_GS_U0_ZA
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_MA term NZ end
+	end
+	net MODULE_2_U0_GQS_GS_U0_C04
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_MA term FZ end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_GS4 term A4 end
+	end
+	net MODULE_2_U0_GQS_GS_U0_YB
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_MB term OZ end
+	end
+	net MODULE_2_U0_GQS_GS_U0_ZB
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_MB term NZ end
+	end
+	net MODULE_2_U0_GQS_GS_U0_C14
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_MB term FZ end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_GS4 term A6 end
+	end
+	net MODULE_4_U0_ANDIN_0
+		gate MODULE_4_U0_GEQ_0_E_U0_U1 term OZ end
+		gate MODULE_4_U0_AG1_0_U1_U1 term F6 end
+	end
+	net MODULE_4_U0_ANDIN_1
+		gate MODULE_4_U0_GEQ_0_E_U0_U1 term NZ end
+		gate MODULE_4_U0_AG1_0_U1_U1 term F5 end
+	end
+	net MODULE_4_U0_ANDIN_2
+		gate MODULE_4_U0_GEQ_1_E_U0_U1 term OZ end
+		gate MODULE_4_U0_AG1_0_U1_U1 term F4 end
+	end
+	net MODULE_4_U0_ANDIN_3
+		gate MODULE_4_U0_GEQ_1_E_U0_U1 term NZ end
+		gate MODULE_4_U0_AG1_0_U1_U1 term F3 end
+	end
+	net MODULE_4_U0_ANDIN_4
+		gate MODULE_4_U0_GEQ_2_O_U0_U1 term OZ end
+		gate MODULE_4_U0_AG1_0_U1_U1 term F2 end
+	end
+	net VCC
+		gate RESET_IOPAD term I2 end
+		gate CAR_ENTER_IOPAD term I2 end
+		gate COUNT1_4_IOPAD term IE end
+		gate COUNT1_4_IOPAD term I1 end
+		gate COUNT1_3_IOPAD term IE end
+		gate COUNT1_3_IOPAD term I1 end
+		gate COUNT1_2_IOPAD term IE end
+		gate COUNT1_2_IOPAD term I1 end
+		gate COUNT1_1_IOPAD term IE end
+		gate COUNT1_1_IOPAD term I1 end
+		gate COUNT1_0_IOPAD term IE end
+		gate COUNT1_0_IOPAD term I1 end
+		gate CAR_EXIT_IOPAD term I2 end
+		gate COUNT2_4_IOPAD term IE end
+		gate COUNT2_4_IOPAD term I1 end
+		gate COUNT2_3_IOPAD term IE end
+		gate COUNT2_3_IOPAD term I1 end
+		gate COUNT2_2_IOPAD term IE end
+		gate COUNT2_2_IOPAD term I1 end
+		gate COUNT2_1_IOPAD term IE end
+		gate COUNT2_1_IOPAD term I1 end
+		gate COUNT2_0_IOPAD term IE end
+		gate COUNT2_0_IOPAD term I1 end
+		gate TOTAL_0_IOPAD term IE end
+		gate TOTAL_0_IOPAD term I1 end
+		gate TOTAL_1_IOPAD term IE end
+		gate TOTAL_1_IOPAD term I1 end
+		gate TOTAL_2_IOPAD term IE end
+		gate TOTAL_2_IOPAD term I1 end
+		gate TOTAL_3_IOPAD term IE end
+		gate TOTAL_3_IOPAD term I1 end
+		gate TOTAL_4_IOPAD term IE end
+		gate TOTAL_4_IOPAD term I1 end
+		gate LOT_FULL_IOPAD term IE end
+		gate LOT_FULL_IOPAD term I1 end
+		gate LOT_EMPTY_QT0 term A1 end
+		gate LOT_EMPTY_QT0 term A2 end
+		gate LOT_EMPTY_QT2 term A1 end
+		gate LOT_EMPTY_QT2 term A2 end
+		gate LOT_EMPTY_QT1 term A1 end
+		gate LOT_EMPTY_IOPAD term IE end
+		gate LOT_EMPTY_IOPAD term I1 end
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_4_S0_U0 term A1 end
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_4_S0_U0 term A3 end
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_3_G3_U4_U34 term A1 end
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_3_G3_U4_U34 term A3 end
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_3_G3_U4_U34 term A5 end
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_3_G3_U4_U34 term B2 end
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_3_G3_U4_U34 term C2 end
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_3_G3_U4_U34 term D2 end
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_3_S0_U0 term A1 end
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_3_S0_U0 term A3 end
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_2_G2_U2_NDT_U2 term A5 end
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_2_S0_U0 term A1 end
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_2_S0_U0 term A3 end
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_1_S0_U0 term A1 end
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_1_S0_U0 term A3 end
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_0_S0_U0 term A1 end
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_0_S0_U0 term A3 end
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_0_S0_U0 term A5 end
+		gate COUNTER2_MODULE_1_S0_G1_U0_GS_4_S0_U0 term A1 end
+		gate COUNTER2_MODULE_1_S0_G1_U0_GS_4_S0_U0 term A3 end
+		gate COUNTER2_MODULE_1_S0_G1_U0_GS_3_G3_U4_U34 term A1 end
+		gate COUNTER2_MODULE_1_S0_G1_U0_GS_3_G3_U4_U34 term A3 end
+		gate COUNTER2_MODULE_1_S0_G1_U0_GS_3_G3_U4_U34 term A5 end
+		gate COUNTER2_MODULE_1_S0_G1_U0_GS_3_G3_U4_U34 term B2 end
+		gate COUNTER2_MODULE_1_S0_G1_U0_GS_3_G3_U4_U34 term C2 end
+		gate COUNTER2_MODULE_1_S0_G1_U0_GS_3_G3_U4_U34 term D2 end
+		gate COUNTER2_MODULE_1_S0_G1_U0_GS_3_S0_U0 term A1 end
+		gate COUNTER2_MODULE_1_S0_G1_U0_GS_3_S0_U0 term A3 end
+		gate COUNTER2_MODULE_1_S0_G1_U0_GS_2_G2_U2_NDT_U2 term A5 end
+		gate COUNTER2_MODULE_1_S0_G1_U0_GS_2_S0_U0 term A1 end
+		gate COUNTER2_MODULE_1_S0_G1_U0_GS_2_S0_U0 term A3 end
+		gate COUNTER2_MODULE_1_S0_G1_U0_GS_1_S0_U0 term A1 end
+		gate COUNTER2_MODULE_1_S0_G1_U0_GS_1_S0_U0 term A3 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_GC_GNC_SC term A1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_GC_GNC_SC term A5 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_GC_GNC_SC term B1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_GC_GNC_SC term C1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_GC_GNC_SC term D2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_GC_GNC_SC term E1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_GC_GNC_SC term F3 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_GC_GNC_SC term F5 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_GC_GNC_SS term A3 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_GC_GNC_SS term A5 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_GC_GNC_SS term B1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_GC_GNC_SS term C2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_GC_GNC_SS term D1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_GC_GNC_SS term E1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_GC_GNC_SS term F1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_GC_GNC_SS term F3 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_GC_GNC_SS term F5 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G1_S1 term A1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G1_S1 term A3 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G1_S1 term A5 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G1_S1 term B1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G1_S1 term E1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G1_S1 term F3 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G1_S1 term F5 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G2_B1 term A3 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G2_B1 term A5 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G2_X2 term A3 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G2_X2 term A5 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G2_X2 term B1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G2_X2 term C2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G2_X2 term D2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G2_X2 term E2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G2_X2 term F1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G2_X2 term F5 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G2_GS2 term A3 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G2_GS2 term A5 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G2_GS2 term B2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G2_GS2 term C1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G2_GS2 term D1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G2_GS2 term E2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G2_GS2 term F3 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G2_GS2 term F5 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G3_X3 term A3 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G3_X3 term A5 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G3_X3 term B1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G3_X3 term C2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G3_X3 term D2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G3_X3 term E2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G3_X3 term F1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G3_X3 term F5 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G3_GS3 term A3 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G3_GS3 term A5 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G3_GS3 term C1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G3_GS3 term D1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G3_GS3 term F3 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G3_GS3 term F5 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_GC3 term A3 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_GC3 term A5 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_GC3 term C1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_GC3 term D1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_GC3 term E1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_GC3 term F3 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_GC3 term F5 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_B3 term F3 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_B3 term F5 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_X5 term A3 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_X5 term A5 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_X5 term B1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_X5 term C2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_X5 term D2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_X5 term E2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_X5 term F1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_X5 term F5 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_MA term A3 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_MA term A5 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_MA term C1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_MA term E1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_MA term F3 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_MA term F5 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_MB term A3 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_MB term A5 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_MB term B1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_MB term D1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_MB term F1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_MB term F3 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_GS4 term A1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_GS4 term A3 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_GS4 term A5 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_GS4 term B2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_GS4 term C1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_GS4 term D1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_GS4 term E2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_GS4 term F3 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_GS4 term F5 end
+		gate MODULE_4_U0_GEQ_0_E_U0_U1 term A3 end
+		gate MODULE_4_U0_GEQ_0_E_U0_U1 term A5 end
+		gate MODULE_4_U0_GEQ_0_E_U0_U1 term A6 end
+		gate MODULE_4_U0_GEQ_0_E_U0_U1 term B1 end
+		gate MODULE_4_U0_GEQ_0_E_U0_U1 term C1 end
+		gate MODULE_4_U0_GEQ_0_E_U0_U1 term D1 end
+		gate MODULE_4_U0_GEQ_0_E_U0_U1 term F1 end
+		gate MODULE_4_U0_GEQ_0_E_U0_U1 term F3 end
+		gate MODULE_4_U0_GEQ_0_E_U0_U1 term F5 end
+		gate MODULE_4_U0_GEQ_1_E_U0_U1 term A3 end
+		gate MODULE_4_U0_GEQ_1_E_U0_U1 term A5 end
+		gate MODULE_4_U0_GEQ_1_E_U0_U1 term A6 end
+		gate MODULE_4_U0_GEQ_1_E_U0_U1 term B1 end
+		gate MODULE_4_U0_GEQ_1_E_U0_U1 term C1 end
+		gate MODULE_4_U0_GEQ_1_E_U0_U1 term D1 end
+		gate MODULE_4_U0_GEQ_1_E_U0_U1 term F1 end
+		gate MODULE_4_U0_GEQ_1_E_U0_U1 term F3 end
+		gate MODULE_4_U0_GEQ_1_E_U0_U1 term F5 end
+		gate MODULE_4_U0_GEQ_2_O_U0_U1 term A3 end
+		gate MODULE_4_U0_GEQ_2_O_U0_U1 term A5 end
+		gate MODULE_4_U0_GEQ_2_O_U0_U1 term A6 end
+		gate MODULE_4_U0_GEQ_2_O_U0_U1 term B1 end
+		gate MODULE_4_U0_GEQ_2_O_U0_U1 term C1 end
+		gate MODULE_4_U0_GEQ_2_O_U0_U1 term D1 end
+		gate MODULE_4_U0_GEQ_2_O_U0_U1 term F3 end
+		gate MODULE_4_U0_GEQ_2_O_U0_U1 term F5 end
+		gate MODULE_4_U0_AG1_0_U1_U1 term A1 end
+		gate MODULE_4_U0_AG1_0_U1_U1 term A3 end
+		gate MODULE_4_U0_AG1_0_U1_U1 term A5 end
+		gate MODULE_4_U0_AG1_0_U1_U1 term B2 end
+		gate MODULE_4_U0_AG1_0_U1_U1 term C2 end
+		gate MODULE_4_U0_AG1_0_U1_U1 term D2 end
+		gate MODULE_4_U0_AG1_0_U1_U1 term E1 end
+		gate MODULE_4_U0_AG1_0_U1_U1 term F1 end
+	end
+	net GND
+		gate RESET_IOPAD term IE end
+		gate RESET_IOPAD term I1 end
+		gate CAR_ENTER_IOPAD term IE end
+		gate CAR_ENTER_IOPAD term I1 end
+		gate CAR_EXIT_IOPAD term IE end
+		gate CAR_EXIT_IOPAD term I1 end
+		gate LOT_EMPTY_QT1 term A2I end
+		gate LOT_EMPTY_OUT term A1I end
+		gate LOT_EMPTY_OUT term A2I end
+		gate COUNT1_4 term S end
+		gate COUNT1_3 term S end
+		gate COUNT1_2 term S end
+		gate COUNT1_1 term S end
+		gate COUNT1_0 term S end
+		gate COUNT2_4 term S end
+		gate COUNT2_3 term S end
+		gate COUNT2_2 term S end
+		gate COUNT2_1 term S end
+		gate COUNT2_0 term S end
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_4_S0_U0 term A2 end
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_4_S0_U0 term A4 end
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_4_S0_U0 term A6 end
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_3_G3_U4_U34 term QS end
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_3_G3_U4_U34 term A2 end
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_3_G3_U4_U34 term A4 end
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_3_G3_U4_U34 term A6 end
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_3_G3_U4_U34 term B1 end
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_3_G3_U4_U34 term C1 end
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_3_G3_U4_U34 term D1 end
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_3_G3_U4_U34 term E2 end
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_3_G3_U4_U34 term F2 end
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_3_G3_U4_U34 term F4 end
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_3_G3_U4_U34 term F6 end
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_3_G3_U4_U34 term QC end
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_3_G3_U4_U34 term QR end
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_3_S0_U0 term A2 end
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_3_S0_U0 term A4 end
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_3_S0_U0 term A6 end
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_2_G2_U2_NDT_U2 term A2 end
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_2_G2_U2_NDT_U2 term A4 end
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_2_G2_U2_NDT_U2 term A6 end
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_2_S0_U0 term A2 end
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_2_S0_U0 term A4 end
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_2_S0_U0 term A6 end
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_1_S0_U0 term A2 end
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_1_S0_U0 term A4 end
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_1_S0_U0 term A6 end
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_0_S0_U0 term A2 end
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_0_S0_U0 term A4 end
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_0_S0_U0 term A6 end
+		gate COUNTER2_MODULE_1_S0_G1_U0_GS_4_S0_U0 term A2 end
+		gate COUNTER2_MODULE_1_S0_G1_U0_GS_4_S0_U0 term A4 end
+		gate COUNTER2_MODULE_1_S0_G1_U0_GS_4_S0_U0 term A6 end
+		gate COUNTER2_MODULE_1_S0_G1_U0_GS_3_G3_U4_U34 term QS end
+		gate COUNTER2_MODULE_1_S0_G1_U0_GS_3_G3_U4_U34 term A2 end
+		gate COUNTER2_MODULE_1_S0_G1_U0_GS_3_G3_U4_U34 term A4 end
+		gate COUNTER2_MODULE_1_S0_G1_U0_GS_3_G3_U4_U34 term A6 end
+		gate COUNTER2_MODULE_1_S0_G1_U0_GS_3_G3_U4_U34 term B1 end
+		gate COUNTER2_MODULE_1_S0_G1_U0_GS_3_G3_U4_U34 term C1 end
+		gate COUNTER2_MODULE_1_S0_G1_U0_GS_3_G3_U4_U34 term D1 end
+		gate COUNTER2_MODULE_1_S0_G1_U0_GS_3_G3_U4_U34 term E2 end
+		gate COUNTER2_MODULE_1_S0_G1_U0_GS_3_G3_U4_U34 term F2 end
+		gate COUNTER2_MODULE_1_S0_G1_U0_GS_3_G3_U4_U34 term F4 end
+		gate COUNTER2_MODULE_1_S0_G1_U0_GS_3_G3_U4_U34 term F6 end
+		gate COUNTER2_MODULE_1_S0_G1_U0_GS_3_G3_U4_U34 term QC end
+		gate COUNTER2_MODULE_1_S0_G1_U0_GS_3_G3_U4_U34 term QR end
+		gate COUNTER2_MODULE_1_S0_G1_U0_GS_3_S0_U0 term A2 end
+		gate COUNTER2_MODULE_1_S0_G1_U0_GS_3_S0_U0 term A4 end
+		gate COUNTER2_MODULE_1_S0_G1_U0_GS_3_S0_U0 term A6 end
+		gate COUNTER2_MODULE_1_S0_G1_U0_GS_2_G2_U2_NDT_U2 term A2 end
+		gate COUNTER2_MODULE_1_S0_G1_U0_GS_2_G2_U2_NDT_U2 term A4 end
+		gate COUNTER2_MODULE_1_S0_G1_U0_GS_2_G2_U2_NDT_U2 term A6 end
+		gate COUNTER2_MODULE_1_S0_G1_U0_GS_2_S0_U0 term A2 end
+		gate COUNTER2_MODULE_1_S0_G1_U0_GS_2_S0_U0 term A4 end
+		gate COUNTER2_MODULE_1_S0_G1_U0_GS_2_S0_U0 term A6 end
+		gate COUNTER2_MODULE_1_S0_G1_U0_GS_1_S0_U0 term A2 end
+		gate COUNTER2_MODULE_1_S0_G1_U0_GS_1_S0_U0 term A4 end
+		gate COUNTER2_MODULE_1_S0_G1_U0_GS_1_S0_U0 term A6 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_GC_GNC_SC term QS end
+		gate MODULE_2_U0_GQS_GS_U0_G02_GC_GNC_SC term A4 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_GC_GNC_SC term A6 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_GC_GNC_SC term C2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_GC_GNC_SC term D1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_GC_GNC_SC term F2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_GC_GNC_SC term F4 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_GC_GNC_SC term F6 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_GC_GNC_SC term QC end
+		gate MODULE_2_U0_GQS_GS_U0_G02_GC_GNC_SC term QR end
+		gate MODULE_2_U0_GQS_GS_U0_G02_GC_GNC_SS term A2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_GC_GNC_SS term A6 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_GC_GNC_SS term B2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_GC_GNC_SS term C1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_GC_GNC_SS term D2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_GC_GNC_SS term E2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_GC_GNC_SS term F4 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_GC_GNC_SS term F6 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G1_S1 term A4 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G1_S1 term A6 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G1_S1 term C2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G1_S1 term D2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G1_S1 term F2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G1_S1 term F4 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G1_S1 term F6 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G2_B1 term A2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G2_B1 term A4 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G2_B1 term A6 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G2_X2 term QS end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G2_X2 term A4 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G2_X2 term A6 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G2_X2 term B2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G2_X2 term C1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G2_X2 term D1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G2_X2 term E1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G2_X2 term F4 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G2_X2 term F6 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G2_X2 term QC end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G2_X2 term QR end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G2_GS2 term A2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G2_GS2 term A4 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G2_GS2 term A6 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G2_GS2 term B1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G2_GS2 term C2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G2_GS2 term D2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G2_GS2 term E1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G2_GS2 term F2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G2_GS2 term F4 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G2_GS2 term F6 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G3_X3 term QS end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G3_X3 term A4 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G3_X3 term A6 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G3_X3 term B2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G3_X3 term C1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G3_X3 term D1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G3_X3 term E1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G3_X3 term F4 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G3_X3 term F6 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G3_X3 term QC end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G3_X3 term QR end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G3_GS3 term A2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G3_GS3 term A4 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G3_GS3 term A6 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G3_GS3 term B2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G3_GS3 term E2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G3_GS3 term F2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G3_GS3 term F4 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G3_GS3 term F6 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_GC3 term QS end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_GC3 term A2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_GC3 term A4 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_GC3 term A6 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_GC3 term B2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_GC3 term F4 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_GC3 term F6 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_GC3 term QC end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_GC3 term QR end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_B3 term F2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_B3 term F4 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_B3 term F6 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_X5 term QS end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_X5 term A1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_X5 term A2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_X5 term A4 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_X5 term A6 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_X5 term B2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_X5 term C1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_X5 term D1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_X5 term E1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_X5 term F2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_X5 term F3 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_X5 term F4 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_X5 term F6 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_X5 term QC end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_X5 term QR end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_MA term QS end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_MA term A1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_MA term A2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_MA term A4 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_MA term A6 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_MA term B2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_MA term D2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_MA term F4 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_MA term F6 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_MA term QC end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_MA term QR end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_MB term QS end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_MB term A1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_MB term A2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_MB term A4 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_MB term A6 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_MB term C2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_MB term E2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_MB term F2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_MB term F6 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_MB term QC end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_MB term QR end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_GS4 term A2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_GS4 term B1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_GS4 term C2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_GS4 term D2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_GS4 term E1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_GS4 term F2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_GS4 term F4 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_GS4 term F6 end
+		gate MODULE_4_U0_GEQ_0_E_U0_U1 term QS end
+		gate MODULE_4_U0_GEQ_0_E_U0_U1 term A2 end
+		gate MODULE_4_U0_GEQ_0_E_U0_U1 term A4 end
+		gate MODULE_4_U0_GEQ_0_E_U0_U1 term E2 end
+		gate MODULE_4_U0_GEQ_0_E_U0_U1 term F2 end
+		gate MODULE_4_U0_GEQ_0_E_U0_U1 term F4 end
+		gate MODULE_4_U0_GEQ_0_E_U0_U1 term F6 end
+		gate MODULE_4_U0_GEQ_0_E_U0_U1 term QC end
+		gate MODULE_4_U0_GEQ_0_E_U0_U1 term QR end
+		gate MODULE_4_U0_GEQ_1_E_U0_U1 term QS end
+		gate MODULE_4_U0_GEQ_1_E_U0_U1 term A2 end
+		gate MODULE_4_U0_GEQ_1_E_U0_U1 term A4 end
+		gate MODULE_4_U0_GEQ_1_E_U0_U1 term E2 end
+		gate MODULE_4_U0_GEQ_1_E_U0_U1 term F2 end
+		gate MODULE_4_U0_GEQ_1_E_U0_U1 term F4 end
+		gate MODULE_4_U0_GEQ_1_E_U0_U1 term F6 end
+		gate MODULE_4_U0_GEQ_1_E_U0_U1 term QC end
+		gate MODULE_4_U0_GEQ_1_E_U0_U1 term QR end
+		gate MODULE_4_U0_GEQ_2_O_U0_U1 term QS end
+		gate MODULE_4_U0_GEQ_2_O_U0_U1 term A2 end
+		gate MODULE_4_U0_GEQ_2_O_U0_U1 term A4 end
+		gate MODULE_4_U0_GEQ_2_O_U0_U1 term D2 end
+		gate MODULE_4_U0_GEQ_2_O_U0_U1 term E1 end
+		gate MODULE_4_U0_GEQ_2_O_U0_U1 term E2 end
+		gate MODULE_4_U0_GEQ_2_O_U0_U1 term F1 end
+		gate MODULE_4_U0_GEQ_2_O_U0_U1 term F2 end
+		gate MODULE_4_U0_GEQ_2_O_U0_U1 term F4 end
+		gate MODULE_4_U0_GEQ_2_O_U0_U1 term F6 end
+		gate MODULE_4_U0_GEQ_2_O_U0_U1 term QC end
+		gate MODULE_4_U0_GEQ_2_O_U0_U1 term QR end
+		gate MODULE_4_U0_AG1_0_U1_U1 term A2 end
+		gate MODULE_4_U0_AG1_0_U1_U1 term A4 end
+		gate MODULE_4_U0_AG1_0_U1_U1 term A6 end
+		gate MODULE_4_U0_AG1_0_U1_U1 term B1 end
+		gate MODULE_4_U0_AG1_0_U1_U1 term C1 end
+		gate MODULE_4_U0_AG1_0_U1_U1 term D1 end
+		gate MODULE_4_U0_AG1_0_U1_U1 term E2 end
+	end
+	net RESET_IN
+		gate RESET_IOPAD term IZ end
+		gate COUNT1_4 term R end
+		gate COUNT1_3 term R end
+		gate COUNT1_2 term R end
+		gate COUNT1_1 term R end
+		gate COUNT1_0 term R end
+		gate COUNT2_4 term R end
+		gate COUNT2_3 term R end
+		gate COUNT2_2 term R end
+		gate COUNT2_1 term R end
+		gate COUNT2_0 term R end
+	end
+	net CAR_ENTER_IN
+		gate CAR_ENTER_IOPAD term IZ end
+		gate COUNT1_4 term CLK end
+		gate COUNT1_3 term CLK end
+		gate COUNT1_2 term CLK end
+		gate COUNT1_1 term CLK end
+		gate COUNT1_0 term CLK end
+	end
+	net COUNT1_4_OUT
+		gate COUNT1_4_IOPAD term I2 end
+		gate COUNT1_4 term Q end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_MA term F1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_MB term F4 end
+		gate COUNTER1_WARP_ADD_1S1C_SS_MODGEN_3_4 term A1 end
+		gate COUNTER1_WARP_ADD_1S1C_SS_MODGEN_3_4 term A2 end
+	end
+	net COUNT1_3_OUT
+		gate COUNT1_3_IOPAD term I2 end
+		gate COUNT1_3 term Q end
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_3_G3_U4_U34 term E1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G3_X3 term A1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G3_X3 term F2 end
+		gate COUNTER1_WARP_ADD_1S1C_SS_MODGEN_3_3 term A1 end
+		gate COUNTER1_WARP_ADD_1S1C_SS_MODGEN_3_3 term A2 end
+	end
+	net COUNT1_2_OUT
+		gate COUNT1_2_IOPAD term I2 end
+		gate COUNT1_2 term Q end
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_3_G3_U4_U34 term F5 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G2_X2 term A1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G2_X2 term F2 end
+		gate COUNTER1_WARP_ADD_1S1C_SS_MODGEN_3_2 term A1 end
+		gate COUNTER1_WARP_ADD_1S1C_SS_MODGEN_3_2 term A2 end
+	end
+	net COUNT1_1_OUT
+		gate COUNT1_1_IOPAD term I2 end
+		gate COUNT1_1 term Q end
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_3_G3_U4_U34 term F3 end
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_2_G2_U2_NDT_U2 term A3 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_GC_GNC_SC term F1 end
+		gate COUNTER1_WARP_ADD_1S1C_SS_MODGEN_3_1 term A1 end
+		gate COUNTER1_WARP_ADD_1S1C_SS_MODGEN_3_1 term A2 end
+	end
+	net COUNT1_0_OUT
+		gate COUNT1_0_IOPAD term I2 end
+		gate COUNT1_0 term Q end
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_3_G3_U4_U34 term F1 end
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_2_G2_U2_NDT_U2 term A1 end
+		gate COUNTER1_MODULE_1_S0_G1_U0_GS_1_S0_U0 term A5 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_GC_GNC_SC term A2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_GC_GNC_SS term A1 end
+		gate COUNTER1_WARP_ADD_1S1C_SS_MODGEN_3_0 term A1 end
+		gate COUNTER1_WARP_ADD_1S1C_SS_MODGEN_3_0 term A2 end
+	end
+	net CAR_EXIT_IN
+		gate CAR_EXIT_IOPAD term IZ end
+		gate COUNT2_4 term CLK end
+		gate COUNT2_3 term CLK end
+		gate COUNT2_2 term CLK end
+		gate COUNT2_1 term CLK end
+		gate COUNT2_0 term CLK end
+	end
+	net COUNT2_4_OUT
+		gate COUNT2_4_IOPAD term I2 end
+		gate COUNT2_4 term Q end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_MA term F2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_MB term F5 end
+		gate COUNTER2_WARP_ADD_1S1C_SS_MODGEN_3_4 term A1 end
+		gate COUNTER2_WARP_ADD_1S1C_SS_MODGEN_3_4 term A2 end
+	end
+	net COUNT2_3_OUT
+		gate COUNT2_3_IOPAD term I2 end
+		gate COUNT2_3 term Q end
+		gate COUNTER2_MODULE_1_S0_G1_U0_GS_3_G3_U4_U34 term E1 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G3_X3 term A2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G3_X3 term F3 end
+		gate COUNTER2_WARP_ADD_1S1C_SS_MODGEN_3_3 term A1 end
+		gate COUNTER2_WARP_ADD_1S1C_SS_MODGEN_3_3 term A2 end
+	end
+	net COUNT2_2_OUT
+		gate COUNT2_2_IOPAD term I2 end
+		gate COUNT2_2 term Q end
+		gate COUNTER2_MODULE_1_S0_G1_U0_GS_3_G3_U4_U34 term F5 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G2_X2 term A2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G2_X2 term F3 end
+		gate COUNTER2_WARP_ADD_1S1C_SS_MODGEN_3_2 term A1 end
+		gate COUNTER2_WARP_ADD_1S1C_SS_MODGEN_3_2 term A2 end
+	end
+	net COUNT2_1_OUT
+		gate COUNT2_1_IOPAD term I2 end
+		gate COUNT2_1 term Q end
+		gate COUNTER2_MODULE_1_S0_G1_U0_GS_3_G3_U4_U34 term F3 end
+		gate COUNTER2_MODULE_1_S0_G1_U0_GS_2_G2_U2_NDT_U2 term A3 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_GC_GNC_SC term B2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_GC_GNC_SC term E2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G1_S1 term A2 end
+		gate COUNTER2_WARP_ADD_1S1C_SS_MODGEN_3_1 term A1 end
+		gate COUNTER2_WARP_ADD_1S1C_SS_MODGEN_3_1 term A2 end
+	end
+	net COUNT2_0_OUT
+		gate COUNT2_0_IOPAD term I2 end
+		gate COUNT2_0 term Q end
+		gate COUNTER2_MODULE_1_S0_G1_U0_GS_3_G3_U4_U34 term F1 end
+		gate COUNTER2_MODULE_1_S0_G1_U0_GS_2_G2_U2_NDT_U2 term A1 end
+		gate COUNTER2_MODULE_1_S0_G1_U0_GS_1_S0_U0 term A5 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_GC_GNC_SC term A3 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_GC_GNC_SS term A4 end
+		gate COUNTER2_WARP_ADD_1S1C_SS_MODGEN_3_0 term A1 end
+		gate COUNTER2_WARP_ADD_1S1C_SS_MODGEN_3_0 term A2 end
+	end
+	net TOTAL_0_OUT
+		gate TOTAL_0_IOPAD term I2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_GC_GNC_SS term OZ end
+		gate MODULE_4_U0_GEQ_0_E_U0_U1 term A1 end
+		gate MODULE_4_U0_GEQ_0_E_U0_U1 term B2 end
+		gate MODULE_4_U0_GEQ_0_E_U0_U1 term C2 end
+		gate LOT_EMPTY_QT2 term A2I end
+	end
+	net TOTAL_1_OUT
+		gate TOTAL_1_IOPAD term I2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G1_S1 term OZ end
+		gate MODULE_4_U0_GEQ_0_E_U0_U1 term D2 end
+		gate MODULE_4_U0_GEQ_0_E_U0_U1 term E1 end
+		gate LOT_EMPTY_QT2 term A1I end
+	end
+	net TOTAL_2_OUT
+		gate TOTAL_2_IOPAD term I2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G2_GS2 term OZ end
+		gate MODULE_4_U0_GEQ_1_E_U0_U1 term A1 end
+		gate MODULE_4_U0_GEQ_1_E_U0_U1 term B2 end
+		gate MODULE_4_U0_GEQ_1_E_U0_U1 term C2 end
+		gate LOT_EMPTY_QT1 term A1I end
+	end
+	net TOTAL_3_OUT
+		gate TOTAL_3_IOPAD term I2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G3_GS3 term OZ end
+		gate MODULE_4_U0_GEQ_1_E_U0_U1 term D2 end
+		gate MODULE_4_U0_GEQ_1_E_U0_U1 term E1 end
+		gate LOT_EMPTY_QT0 term A2I end
+	end
+	net TOTAL_4_OUT
+		gate TOTAL_4_IOPAD term I2 end
+		gate MODULE_2_U0_GQS_GS_U0_G02_G4_GS4 term OZ end
+		gate MODULE_4_U0_GEQ_2_O_U0_U1 term A1 end
+		gate MODULE_4_U0_GEQ_2_O_U0_U1 term B2 end
+		gate MODULE_4_U0_GEQ_2_O_U0_U1 term C2 end
+		gate LOT_EMPTY_QT0 term A1I end
+	end
+	net LOT_FULL_OUT
+		gate LOT_FULL_IOPAD term I2 end
+		gate MODULE_4_U0_AG1_0_U1_U1 term OZ end
+	end
+	net LOT_EMPTY_OUT
+		gate LOT_EMPTY_OUT term Q end
+		gate LOT_EMPTY_IOPAD term I2 end
+	end
+	net LOT_EMPTY_QT0
+		gate LOT_EMPTY_QT0 term Q end
+		gate LOT_EMPTY_OUT term A1 end
+	end
+	net LOT_EMPTY_QT2
+		gate LOT_EMPTY_QT2 term Q end
+		gate LOT_EMPTY_QT1 term A2 end
+	end
+	net LOT_EMPTY_QT1
+		gate LOT_EMPTY_QT1 term Q end
+		gate LOT_EMPTY_OUT term A2 end
+	end
+end

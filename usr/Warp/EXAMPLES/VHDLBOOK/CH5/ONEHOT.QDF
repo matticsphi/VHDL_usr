@@ -1,0 +1,1526 @@
+#
+#	QDIF created directly by Warp vers. 4 IR x48
+#	Mon Feb 26 14:39:41 1996
+#
+QDIF 3
+file p8x12b
+package pl44
+library warp
+  gates 18
+  terms 167
+  ports 281
+    gate LOGICO cell LOGIC
+	term OZ port OZ end
+	term A1 port A1 end
+	term A2 port A2 end
+	term A3 port A3 end
+	term A4 port A4 end
+	term A5 port A5 end
+	term A6 port A6 end
+	term B1 port B1 end
+	term B2 port B2 end
+	term C1 port C1 end
+	term C2 port C2 end
+	term D1 port D1 end
+	term D2 port D2 end
+	term E1 port E1 end
+	term E2 port E2 end
+	term F1 port F1 end
+	term F2 port F2 end
+	term F3 port F3 end
+	term F4 port F4 end
+	term F5 port F5 end
+	term F6 port F6 end
+	term VCC end
+	term GND end
+    end
+   gate PALCELL cell LOGIC
+     term A1 port A1 end
+     term A2 port A2 end
+     term A3 port A3 end
+     term A4 port A4 end
+     term A5 port A5 end
+     term A6 port A6 end
+     term B1 port B1 end
+     term B2 port B2 end
+     term C1 port C1 end
+     term C2 port C2 end
+     term D1 port D1 end
+     term D2 port D2 end
+     term E1 port E1 end
+     term E2 port E2 end
+     term F1 port F1 end
+     term F2 port F2 end
+     term F3 port F3 end
+     term F4 port F4 end
+     term F5 port F5 end
+     term F6 port F6 end
+     term QC port QC end
+     term QR port QR end
+     term QS port QS end
+     term AZ port OS port AZ end
+     term FZ port FZ port NS end
+     term NZ port NZ end
+     term OZ port QD port OZ end
+     term QZ port QZ end
+     term VCC end
+     term GND end
+  end
+  gate PAINCELL cell INPUT
+     term IP port IP end
+     term INI port IN end
+     term IZ port IZ end
+  end
+  gate PACKCELL cell CLOCK
+     term IP port IP end
+     term INI port IN end
+     term IZ port IZ end
+     term IC port IC end
+  end
+  gate PABICELL cell BIDIR
+     term I1 port I1 end
+     term I2 port I2 end
+     term IE port IE end
+     term IP port IP end
+     term IZ port IZ end
+     term VCC end
+     term GND end
+  end
+  gate MUX1X2 cell LOGIC
+     term S0 port F1 end
+     term A0 port D1 end
+     term A0I port D2 end
+     term A1 port E1 end
+     term A1I port E2 end
+     term Q port NZ end
+     term GND port F2 port F4 port F6 end
+     term VCC port F3 port F5 end
+  end
+  gate MUX2X4 cell LOGIC
+     term S0 port F1 end
+     term S1 port A1 end
+     term A0 port B1 end
+     term A0I port B2 end
+     term A1 port C1 end
+     term A1I port C2 end
+     term A2 port D1 end
+     term A2I port D2 end
+     term A3 port E1 end
+     term A3I port E2 end
+     term Q port OZ end
+     term GND port A2 port A4 port A6 port F2 port F4 port F6 end
+     term VCC port A3 port A5 port F3 port F5 end
+  end
+  gate XOR2 cell LOGIC
+     term A1 port D2 end
+     term A2 port E1 end
+     term B port F2 end
+     term Q port NZ end
+     term GND port A2 port A4 port A6 port B2 port C2 port E2 port F4 port F6 end
+     term VCC port A1 port A3 port A5 port B1 port C1 port D1 port F1 port F3 port F5 end
+  end
+  gate XOR2I1 cell LOGIC
+     term A1I port D1 end
+     term A2I port E2 end
+     term B port F2 end
+     term Q port NZ end
+     term GND port A2 port A4 port A6 port B2 port C2 port D2 port F4 port F6 end
+     term VCC port A1 port A3 port A5 port B1 port C1 port E1 port F1 port F3 port F5 end
+  end
+  gate XOR2I2 cell LOGIC
+     term A1I port D1 end
+     term A2I port E2 end
+     term BI port F1 end
+     term Q port NZ end
+     term GND port A2 port A4 port A6 port B2 port C2 port D2 port F2 port F4 port F6 end
+     term VCC port A1 port A3 port A5 port B1 port C1 port E1 port F3 port F5 end
+  end
+  gate PAFRAG_Q cell LOGIC
+     term QZ port QZ end
+     term QC port QC end
+     term QS port QS end
+     term QR port QR end
+     term QD port E1 end
+     term VCC port F5 port F3 port F1 port D1 port C1 port B1 port A5 port A3 port A1 end
+     term GND port F6 port F4 port F2 port E2 port D2 port C2 port B2 port A6 port A4 port A2 end
+  end
+  gate DSRFF cell LOGIC
+     term S port QS end
+     term CLK port QC end
+     term R port QR end
+     term D port E1 end
+     term Q port QZ end
+     term VCC port F5 port F3 port F1 port D1 port C1 port B1 port A5 port A3 port A1 end
+     term GND port F6 port F4 port F2 port E2 port D2 port C2 port B2 port A6 port A4 port A2 end
+  end
+  gate DFF cell LOGIC
+     term CLK port QC end
+     term D port E1 end
+     term Q port QZ end
+     term VCC port F5 port F3 port F1 port D1 port C1 port B1 port A5 port A3 port A1 end
+     term GND port F6 port F4 port F2 port E2 port D2 port C2 port B2 port A6 port A4 port A2 port QS port QR end
+  end
+  gate PAFRAG_M cell LOGIC
+     term VCC port A3 port A5 port F3 port F5 end
+     term GND port A2 port A4 port A6 port F2 port F4 port F6 end
+     term OS port A1 end
+     term NSI port F1 end
+     term B1 port B1 end
+     term B2 port B2 end
+     term C1 port C1 end
+     term C2 port C2 end
+     term D1 port D1 end
+     term D2 port D2 end
+     term E1 port E1 end
+     term E2 port E2 end
+     term OZ port OZ end
+     term NZ port NZ end
+  end
+     
+  gate PAFRAG_A cell LOGIC
+     term A1 port A1 end
+     term A2 port A2 end
+     term A3 port A3 end
+     term A4 port A4 end
+     term A5 port A5 end
+     term A6 port A6 end
+     term AZ port AZ end
+  end
+  gate PAFRAG_F cell LOGIC
+     term F1 port F1 end
+     term F2 port F2 end
+     term F3 port F3 end
+     term F4 port F4 end
+     term F5 port F5 end
+     term F6 port F6 end
+     term FZ port FZ end
+  end
+  gate AND6I3 cell LOGIC
+     term A1 port A1 end
+     term A1I port A2 end
+     term A2 port A3 end
+     term A2I port A4 end
+     term A3 port A5 end
+     term A3I port A6 end
+     term Q port AZ end
+  end
+  gate AND4I2 cell LOGIC
+     term GND port A6 end
+     term VCC port A5 end
+     term A1 port A1 end
+     term A1I port A2 end
+     term A2 port A3 end
+     term A2I port A4 end
+     term Q port AZ end
+  end
+end
+logical QDIF
+	gates 154
+	nets 198
+	gate PRESENT_STATESBV_16 master DSRFF end
+	gate PRESENT_STATESBV_14 master DSRFF end
+	gate PRESENT_STATESBV_8 master DSRFF end
+	gate PRESENT_STATESBV_6 master DSRFF end
+	gate PRESENT_STATESBV_3 master DSRFF end
+	gate SET_0_IOPAD master PABICELL end
+	gate SET_0 master DSRFF end
+	gate SET_1_IOPAD master PABICELL end
+	gate SET_1 master DSRFF end
+	gate PRESENT_STATESBV_2 master DSRFF end
+	gate NEXT_STATESBV_5 master DSRFF end
+	gate PRESENT_STATESBV_5 master DSRFF end
+	gate PRESENT_STATESBV_7 master DSRFF end
+	gate PRESENT_STATESBV_9 master DSRFF end
+	gate PRESENT_STATESBV_10 master DSRFF end
+	gate PRESENT_STATESBV_11 master DSRFF end
+	gate PRESENT_STATESBV_12 master DSRFF end
+	gate PRESENT_STATESBV_13 master DSRFF end
+	gate PRESENT_STATESBV_15 master DSRFF end
+	gate SET_4_QT0 master AND4I2 end
+	gate SET_4_IOPAD master PABICELL end
+	gate SET_3_QT4 master AND4I2 end
+	gate SET_3_QT3 master AND4I2 end
+	gate SET_3_QT6 master AND4I2 end
+	gate SET_3_QT7 master AND4I2 end
+	gate SET_3_QT5 master AND4I2 end
+	gate SET_3_QT2 master AND4I2 end
+	gate SET_3_QT1 master AND4I2 end
+	gate SET_3_IOPAD master PABICELL end
+	gate SET_2_QT9 master AND4I2 end
+	gate SET_2_QT11 master AND4I2 end
+	gate SET_2_QT10 master AND4I2 end
+	gate SET_2_QT8 master AND4I2 end
+	gate SET_2_IOPAD master PABICELL end
+	gate NEXT_STATESBV_0_QT13 master AND4I2 end
+	gate NEXT_STATESBV_0_QT14 master AND4I2 end
+	gate NEXT_STATESBV_0_QT15 master AND4I2 end
+	gate NEXT_STATESBV_0_QT16 master AND4I2 end
+	gate NEXT_STATESBV_0_QT12 master AND4I2 end
+	gate NEXT_STATESBV_0 master AND4I2 end
+	gate NEXT_STATESBV_1_QT18 master AND4I2 end
+	gate NEXT_STATESBV_1_QT19 master AND4I2 end
+	gate NEXT_STATESBV_1_QT17 master AND4I2 end
+	gate NEXT_STATESBV_1 master AND4I2 end
+	gate REF_IOPAD master PABICELL end
+	gate NEXT_STATESBV_15 master AND4I2 end
+	gate NEXT_STATESBV_7_QT20 master AND4I2 end
+	gate READ_IOPAD master PABICELL end
+	gate NEXT_STATESBV_7_QT21 master AND4I2 end
+	gate NEXT_STATESBV_7 master AND4I2 end
+	gate NEXT_STATESBV_2_QT22 master AND4I2 end
+	gate NEXT_STATESBV_2_QT23 master AND4I2 end
+	gate NEXT_STATESBV_2 master AND4I2 end
+	gate NEXT_STATESBV_3_QT25 master AND4I2 end
+	gate NEXT_STATESBV_3_QT24 master AND4I2 end
+	gate NEXT_STATESBV_3 master AND4I2 end
+	gate BURST_IOPAD master PABICELL end
+	gate NEXT_STATESBV_4_QT26 master AND4I2 end
+	gate NEXT_STATESBV_4 master AND4I2 end
+	gate NEXT_STATESBV_6_QT28 master AND4I2 end
+	gate NEXT_STATESBV_6_QT27 master AND4I2 end
+	gate NEXT_STATESBV_6 master AND4I2 end
+	gate NEXT_STATESBV_8_QT30 master AND4I2 end
+	gate NEXT_STATESBV_8_QT29 master AND4I2 end
+	gate NEXT_STATESBV_8 master AND4I2 end
+	gate NEXT_STATESBV_9_QT31 master AND4I2 end
+	gate NEXT_STATESBV_9 master AND4I2 end
+	gate NEXT_STATESBV_10_QT33 master AND4I2 end
+	gate NEXT_STATESBV_10_QT32 master AND4I2 end
+	gate NEXT_STATESBV_10 master AND4I2 end
+	gate NEXT_STATESBV_11 master AND4I2 end
+	gate NEXT_STATESBV_12_QT35 master AND4I2 end
+	gate NEXT_STATESBV_12_QT34 master AND4I2 end
+	gate NEXT_STATESBV_12 master AND4I2 end
+	gate NEXT_STATESBV_13 master AND4I2 end
+	gate NEXT_STATESBV_14_QT37 master AND4I2 end
+	gate NEXT_STATESBV_14_QT36 master AND4I2 end
+	gate NEXT_STATESBV_14 master AND4I2 end
+	gate NEXT_STATESBV_16_QT39 master AND4I2 end
+	gate NEXT_STATESBV_16_QT38 master AND4I2 end
+	gate NEXT_STATESBV_16 master AND4I2 end
+	gate CNT_15_IOPAD master PABICELL end
+	gate CNT_14_IOPAD master PABICELL end
+	gate CNT_13_IOPAD master PABICELL end
+	gate WFAC2_QT40 master AND4I2 end
+	gate WFAC2 master AND4I2 end
+	gate CNT_12_IOPAD master PABICELL end
+	gate CNT_11_IOPAD master PABICELL end
+	gate WFAC4_QT41 master AND4I2 end
+	gate WFAC4 master AND4I2 end
+	gate CNT_10_IOPAD master PABICELL end
+	gate CNT_9_IOPAD master PABICELL end
+	gate WFAC6_QT42 master AND4I2 end
+	gate WFAC6 master AND4I2 end
+	gate CNT_8_IOPAD master PABICELL end
+	gate CNT_7_IOPAD master PABICELL end
+	gate WFAC10_QT43 master AND4I2 end
+	gate CNT_6_IOPAD master PABICELL end
+	gate CNT_5_IOPAD master PABICELL end
+	gate WFAC10_QT45 master AND4I2 end
+	gate WFAC10_QT44 master AND4I2 end
+	gate WFAC10 master AND4I2 end
+	gate CNT_4_IOPAD master PABICELL end
+	gate CNT_3_IOPAD master PABICELL end
+	gate WFAC13_QT46 master AND4I2 end
+	gate CNT_2_IOPAD master PABICELL end
+	gate WFAC13_QT47 master AND4I2 end
+	gate WFAC13 master AND4I2 end
+	gate CNT_1_IOPAD master PABICELL end
+	gate CNT_0_IOPAD master PABICELL end
+	gate WFAC15_QT48 master AND4I2 end
+	gate WFAC15 master AND4I2 end
+	gate ADDR_15_IOPAD master PABICELL end
+	gate ADDR_14_IOPAD master PABICELL end
+	gate ADDR_13_IOPAD master PABICELL end
+	gate WFAC20_QT50 master AND4I2 end
+	gate WFAC20_QT49 master AND4I2 end
+	gate ADDR_12_IOPAD master PABICELL end
+	gate ADDR_11_IOPAD master PABICELL end
+	gate ADDR_10_IOPAD master PABICELL end
+	gate WFAC20_QT52 master AND4I2 end
+	gate WFAC20_QT51 master AND4I2 end
+	gate WFAC20 master AND4I2 end
+	gate ADDR_9_IOPAD master PABICELL end
+	gate ADDR_8_IOPAD master PABICELL end
+	gate WFAC24_QT53 master AND4I2 end
+	gate ADDR_7_IOPAD master PABICELL end
+	gate ADDR_6_IOPAD master PABICELL end
+	gate WFAC24_QT55 master AND4I2 end
+	gate WFAC24_QT54 master AND4I2 end
+	gate WFAC24 master AND4I2 end
+	gate ADDR_5_IOPAD master PABICELL end
+	gate ADDR_4_IOPAD master PABICELL end
+	gate WFAC28_QT56 master AND4I2 end
+	gate ADDR_3_IOPAD master PABICELL end
+	gate ADDR_2_IOPAD master PABICELL end
+	gate WFAC28_QT58 master AND4I2 end
+	gate WFAC28_QT57 master AND4I2 end
+	gate WFAC28 master AND4I2 end
+	gate ADDR_1_IOPAD master PABICELL end
+	gate ADDR_0_IOPAD master PABICELL end
+	gate WFAC31_QT59 master AND4I2 end
+	gate ADS_IOPAD master PABICELL end
+	gate WFAC31_QT60 master AND4I2 end
+	gate WFAC31 master AND4I2 end
+	gate WFAC32 master AND4I2 end
+	gate WFAC33 master AND4I2 end
+	gate NEXT_STATESBV_0_DIV1_QT62 master AND4I2 end
+	gate NEXT_STATESBV_0_DIV1_QT63 master AND4I2 end
+	gate NEXT_STATESBV_0_DIV1_QT61 master AND4I2 end
+	gate NEXT_STATESBV_0_DIV1 master AND4I2 end
+	gate CLK_CKPAD master PACKCELL end
+	gate RST_CKPAD master PACKCELL end
+	gate RDY_INPAD master PAINCELL end
+	net CLK
+		gate CLK_CKPAD term IP end
+	end
+	net RST
+		gate RST_CKPAD term IP end
+	end
+	net ADDR_15
+		gate ADDR_15_IOPAD term IP end
+	end
+	net ADDR_14
+		gate ADDR_14_IOPAD term IP end
+	end
+	net ADDR_13
+		gate ADDR_13_IOPAD term IP end
+	end
+	net ADDR_12
+		gate ADDR_12_IOPAD term IP end
+	end
+	net ADDR_11
+		gate ADDR_11_IOPAD term IP end
+	end
+	net ADDR_10
+		gate ADDR_10_IOPAD term IP end
+	end
+	net ADDR_9
+		gate ADDR_9_IOPAD term IP end
+	end
+	net ADDR_8
+		gate ADDR_8_IOPAD term IP end
+	end
+	net ADDR_7
+		gate ADDR_7_IOPAD term IP end
+	end
+	net ADDR_6
+		gate ADDR_6_IOPAD term IP end
+	end
+	net ADDR_5
+		gate ADDR_5_IOPAD term IP end
+	end
+	net ADDR_4
+		gate ADDR_4_IOPAD term IP end
+	end
+	net ADDR_3
+		gate ADDR_3_IOPAD term IP end
+	end
+	net ADDR_2
+		gate ADDR_2_IOPAD term IP end
+	end
+	net ADDR_1
+		gate ADDR_1_IOPAD term IP end
+	end
+	net ADDR_0
+		gate ADDR_0_IOPAD term IP end
+	end
+	net CNT_15
+		gate CNT_15_IOPAD term IP end
+	end
+	net CNT_14
+		gate CNT_14_IOPAD term IP end
+	end
+	net CNT_13
+		gate CNT_13_IOPAD term IP end
+	end
+	net CNT_12
+		gate CNT_12_IOPAD term IP end
+	end
+	net CNT_11
+		gate CNT_11_IOPAD term IP end
+	end
+	net CNT_10
+		gate CNT_10_IOPAD term IP end
+	end
+	net CNT_9
+		gate CNT_9_IOPAD term IP end
+	end
+	net CNT_8
+		gate CNT_8_IOPAD term IP end
+	end
+	net CNT_7
+		gate CNT_7_IOPAD term IP end
+	end
+	net CNT_6
+		gate CNT_6_IOPAD term IP end
+	end
+	net CNT_5
+		gate CNT_5_IOPAD term IP end
+	end
+	net CNT_4
+		gate CNT_4_IOPAD term IP end
+	end
+	net CNT_3
+		gate CNT_3_IOPAD term IP end
+	end
+	net CNT_2
+		gate CNT_2_IOPAD term IP end
+	end
+	net CNT_1
+		gate CNT_1_IOPAD term IP end
+	end
+	net CNT_0
+		gate CNT_0_IOPAD term IP end
+	end
+	net ADS
+		gate ADS_IOPAD term IP end
+	end
+	net RDY
+		gate RDY_INPAD term IP end
+	end
+	net REF
+		gate REF_IOPAD term IP end
+	end
+	net READ
+		gate READ_IOPAD term IP end
+	end
+	net BURST
+		gate BURST_IOPAD term IP end
+	end
+	net SET_4
+		gate SET_4_IOPAD term IP end
+	end
+	net SET_3
+		gate SET_3_IOPAD term IP end
+	end
+	net SET_2
+		gate SET_2_IOPAD term IP end
+	end
+	net SET_1
+		gate SET_1_IOPAD term IP end
+	end
+	net SET_0
+		gate SET_0_IOPAD term IP end
+	end
+	net NEXT_STATESBV_0
+		gate SET_0 term D end
+		gate NEXT_STATESBV_0 term Q end
+	end
+	net PRESENT_STATESBV_16
+		gate PRESENT_STATESBV_16 term Q end
+		gate SET_4_QT0 term A1I end
+		gate NEXT_STATESBV_0_QT13 term A1 end
+		gate NEXT_STATESBV_16_QT39 term A1 end
+	end
+	net PRESENT_STATESBV_14
+		gate PRESENT_STATESBV_14 term Q end
+		gate SET_3_QT3 term A1I end
+		gate NEXT_STATESBV_14_QT37 term A2 end
+		gate NEXT_STATESBV_0_DIV1_QT61 term A1I end
+	end
+	net PRESENT_STATESBV_8
+		gate PRESENT_STATESBV_8 term Q end
+		gate SET_3_QT4 term A1I end
+		gate NEXT_STATESBV_8_QT30 term A2 end
+		gate NEXT_STATESBV_9_QT31 term A2 end
+		gate WFAC32 term A1I end
+	end
+	net PRESENT_STATESBV_6
+		gate PRESENT_STATESBV_6 term Q end
+		gate SET_2_QT9 term A1I end
+		gate NEXT_STATESBV_6_QT28 term A2 end
+		gate NEXT_STATESBV_0_DIV1_QT63 term A1I end
+	end
+	net PRESENT_STATESBV_3
+		gate PRESENT_STATESBV_3 term Q end
+		gate SET_2_QT9 term A2I end
+		gate NEXT_STATESBV_3_QT25 term A2 end
+		gate NEXT_STATESBV_4_QT26 term A2 end
+		gate WFAC32 term A2I end
+	end
+	net NEXT_STATESBV_1
+		gate SET_1 term D end
+		gate NEXT_STATESBV_1 term Q end
+	end
+	net NEXT_STATESBV_15
+		gate PRESENT_STATESBV_15 term D end
+		gate NEXT_STATESBV_15 term Q end
+	end
+	net NEXT_STATESBV_7
+		gate PRESENT_STATESBV_7 term D end
+		gate NEXT_STATESBV_7 term Q end
+	end
+	net NEXT_STATESBV_2
+		gate PRESENT_STATESBV_2 term D end
+		gate NEXT_STATESBV_2 term Q end
+	end
+	net NEXT_STATESBV_3
+		gate PRESENT_STATESBV_3 term D end
+		gate NEXT_STATESBV_3 term Q end
+	end
+	net PRESENT_STATESBV_2
+		gate PRESENT_STATESBV_2 term Q end
+		gate SET_2_QT10 term A1I end
+		gate NEXT_STATESBV_3_QT24 term A1I end
+	end
+	net NEXT_STATESBV_4
+		gate NEXT_STATESBV_5 term D end
+		gate NEXT_STATESBV_4 term Q end
+	end
+	net NEXT_STATESBV_5
+		gate NEXT_STATESBV_5 term Q end
+		gate PRESENT_STATESBV_5 term D end
+		gate SET_2_QT11 term A1I end
+	end
+	net NEXT_STATESBV_6
+		gate PRESENT_STATESBV_6 term D end
+		gate NEXT_STATESBV_6 term Q end
+	end
+	net PRESENT_STATESBV_5
+		gate PRESENT_STATESBV_5 term Q end
+		gate SET_2_QT11 term A2I end
+		gate NEXT_STATESBV_6_QT27 term A1I end
+	end
+	net NEXT_STATESBV_8
+		gate PRESENT_STATESBV_8 term D end
+		gate NEXT_STATESBV_8 term Q end
+	end
+	net PRESENT_STATESBV_7
+		gate PRESENT_STATESBV_7 term Q end
+		gate SET_3_QT4 term A2I end
+		gate NEXT_STATESBV_8_QT29 term A1I end
+	end
+	net NEXT_STATESBV_9
+		gate PRESENT_STATESBV_9 term D end
+		gate NEXT_STATESBV_9 term Q end
+	end
+	net NEXT_STATESBV_10
+		gate PRESENT_STATESBV_10 term D end
+		gate NEXT_STATESBV_10 term Q end
+	end
+	net PRESENT_STATESBV_9
+		gate PRESENT_STATESBV_9 term Q end
+		gate SET_3_QT6 term A1I end
+		gate NEXT_STATESBV_10_QT32 term A1I end
+	end
+	net PRESENT_STATESBV_10
+		gate PRESENT_STATESBV_10 term Q end
+		gate SET_3_QT6 term A2I end
+		gate NEXT_STATESBV_10_QT33 term A2 end
+		gate NEXT_STATESBV_11 term A2 end
+	end
+	net NEXT_STATESBV_11
+		gate PRESENT_STATESBV_11 term D end
+		gate NEXT_STATESBV_11 term Q end
+	end
+	net NEXT_STATESBV_12
+		gate PRESENT_STATESBV_12 term D end
+		gate NEXT_STATESBV_12 term Q end
+	end
+	net PRESENT_STATESBV_11
+		gate PRESENT_STATESBV_11 term Q end
+		gate SET_3_QT7 term A1I end
+		gate NEXT_STATESBV_12_QT34 term A1I end
+	end
+	net PRESENT_STATESBV_12
+		gate PRESENT_STATESBV_12 term Q end
+		gate SET_3_QT7 term A2I end
+		gate NEXT_STATESBV_12_QT35 term A2 end
+		gate NEXT_STATESBV_13 term A2 end
+	end
+	net NEXT_STATESBV_13
+		gate PRESENT_STATESBV_13 term D end
+		gate NEXT_STATESBV_13 term Q end
+	end
+	net NEXT_STATESBV_14
+		gate PRESENT_STATESBV_14 term D end
+		gate NEXT_STATESBV_14 term Q end
+	end
+	net PRESENT_STATESBV_13
+		gate PRESENT_STATESBV_13 term Q end
+		gate SET_3_QT1 term A1I end
+		gate NEXT_STATESBV_14_QT36 term A1I end
+	end
+	net NEXT_STATESBV_16
+		gate PRESENT_STATESBV_16 term D end
+		gate NEXT_STATESBV_16 term Q end
+	end
+	net PRESENT_STATESBV_15
+		gate PRESENT_STATESBV_15 term Q end
+		gate SET_4_QT0 term A2I end
+		gate NEXT_STATESBV_16_QT38 term A1I end
+	end
+	net WFAC2
+		gate WFAC2 term Q end
+		gate WFAC4_QT41 term A2 end
+	end
+	net WFAC4
+		gate WFAC4 term Q end
+		gate WFAC6_QT42 term A2 end
+	end
+	net WFAC6
+		gate WFAC6 term Q end
+		gate WFAC10_QT45 term A2 end
+	end
+	net WFAC10
+		gate WFAC10 term Q end
+		gate WFAC13_QT47 term A2 end
+	end
+	net WFAC13
+		gate WFAC13 term Q end
+		gate WFAC15_QT48 term A2 end
+	end
+	net WFAC15
+		gate NEXT_STATESBV_0_QT13 term A2 end
+		gate NEXT_STATESBV_16_QT39 term A2I end
+		gate WFAC15 term Q end
+	end
+	net WFAC20
+		gate WFAC20 term Q end
+		gate WFAC24_QT55 term A2 end
+	end
+	net WFAC24
+		gate WFAC24 term Q end
+		gate WFAC28_QT58 term A2 end
+	end
+	net WFAC28
+		gate WFAC28 term Q end
+		gate WFAC31_QT60 term A2 end
+	end
+	net WFAC31
+		gate NEXT_STATESBV_0_QT14 term A2I end
+		gate NEXT_STATESBV_1_QT18 term A2 end
+		gate WFAC31 term Q end
+	end
+	net WFAC32
+		gate WFAC32 term Q end
+		gate NEXT_STATESBV_0_DIV1_QT62 term A2I end
+	end
+	net WFAC33
+		gate NEXT_STATESBV_1_QT19 term A2 end
+		gate WFAC33 term Q end
+	end
+	net NEXT_STATESBV_0_DIV1
+		gate NEXT_STATESBV_0_QT15 term A2 end
+		gate NEXT_STATESBV_0_DIV1 term Q end
+	end
+	net VCC
+		gate SET_0_IOPAD term IE end
+		gate SET_0_IOPAD term I1 end
+		gate SET_1_IOPAD term IE end
+		gate SET_1_IOPAD term I1 end
+		gate SET_4_QT0 term A1 end
+		gate SET_4_QT0 term A2 end
+		gate SET_4_IOPAD term IE end
+		gate SET_3_QT4 term A1 end
+		gate SET_3_QT4 term A2 end
+		gate SET_3_QT3 term A1 end
+		gate SET_3_QT6 term A1 end
+		gate SET_3_QT6 term A2 end
+		gate SET_3_QT7 term A1 end
+		gate SET_3_QT7 term A2 end
+		gate SET_3_QT1 term A1 end
+		gate SET_3_IOPAD term IE end
+		gate SET_2_QT9 term A1 end
+		gate SET_2_QT9 term A2 end
+		gate SET_2_QT11 term A1 end
+		gate SET_2_QT11 term A2 end
+		gate SET_2_QT10 term A1 end
+		gate SET_2_IOPAD term IE end
+		gate NEXT_STATESBV_0_QT14 term A2 end
+		gate NEXT_STATESBV_0_QT16 term A1 end
+		gate NEXT_STATESBV_0_QT16 term A2 end
+		gate NEXT_STATESBV_0_QT12 term A1 end
+		gate NEXT_STATESBV_0 term A1 end
+		gate NEXT_STATESBV_0 term A2 end
+		gate NEXT_STATESBV_1_QT19 term A1 end
+		gate NEXT_STATESBV_1_QT17 term A1 end
+		gate NEXT_STATESBV_1_QT17 term A2 end
+		gate NEXT_STATESBV_1 term A1 end
+		gate NEXT_STATESBV_1 term A2 end
+		gate REF_IOPAD term I2 end
+		gate NEXT_STATESBV_7_QT20 term A2 end
+		gate READ_IOPAD term I2 end
+		gate NEXT_STATESBV_2_QT22 term A2 end
+		gate NEXT_STATESBV_2_QT23 term A1 end
+		gate NEXT_STATESBV_3_QT25 term A1 end
+		gate NEXT_STATESBV_3_QT24 term A1 end
+		gate NEXT_STATESBV_3_QT24 term A2 end
+		gate NEXT_STATESBV_3 term A1 end
+		gate NEXT_STATESBV_3 term A2 end
+		gate BURST_IOPAD term I2 end
+		gate NEXT_STATESBV_6_QT28 term A1 end
+		gate NEXT_STATESBV_6_QT27 term A1 end
+		gate NEXT_STATESBV_6_QT27 term A2 end
+		gate NEXT_STATESBV_6 term A1 end
+		gate NEXT_STATESBV_6 term A2 end
+		gate NEXT_STATESBV_8_QT30 term A1 end
+		gate NEXT_STATESBV_8_QT29 term A1 end
+		gate NEXT_STATESBV_8_QT29 term A2 end
+		gate NEXT_STATESBV_8 term A1 end
+		gate NEXT_STATESBV_8 term A2 end
+		gate NEXT_STATESBV_10_QT33 term A1 end
+		gate NEXT_STATESBV_10_QT32 term A1 end
+		gate NEXT_STATESBV_10_QT32 term A2 end
+		gate NEXT_STATESBV_10 term A1 end
+		gate NEXT_STATESBV_10 term A2 end
+		gate NEXT_STATESBV_12_QT35 term A1 end
+		gate NEXT_STATESBV_12_QT34 term A1 end
+		gate NEXT_STATESBV_12_QT34 term A2 end
+		gate NEXT_STATESBV_12 term A1 end
+		gate NEXT_STATESBV_12 term A2 end
+		gate NEXT_STATESBV_14_QT37 term A1 end
+		gate NEXT_STATESBV_14_QT36 term A1 end
+		gate NEXT_STATESBV_14_QT36 term A2 end
+		gate NEXT_STATESBV_14 term A1 end
+		gate NEXT_STATESBV_14 term A2 end
+		gate NEXT_STATESBV_16_QT39 term A2 end
+		gate NEXT_STATESBV_16_QT38 term A1 end
+		gate NEXT_STATESBV_16_QT38 term A2 end
+		gate NEXT_STATESBV_16 term A1 end
+		gate NEXT_STATESBV_16 term A2 end
+		gate CNT_15_IOPAD term I2 end
+		gate CNT_14_IOPAD term I2 end
+		gate CNT_13_IOPAD term I2 end
+		gate CNT_12_IOPAD term I2 end
+		gate CNT_11_IOPAD term I2 end
+		gate CNT_10_IOPAD term I2 end
+		gate CNT_9_IOPAD term I2 end
+		gate CNT_8_IOPAD term I2 end
+		gate CNT_7_IOPAD term I2 end
+		gate WFAC10_QT43 term A2 end
+		gate CNT_6_IOPAD term I2 end
+		gate CNT_5_IOPAD term I2 end
+		gate WFAC10_QT45 term A1 end
+		gate WFAC10_QT44 term A1 end
+		gate CNT_4_IOPAD term I2 end
+		gate CNT_3_IOPAD term I2 end
+		gate WFAC13_QT46 term A1 end
+		gate WFAC13_QT46 term A2 end
+		gate CNT_2_IOPAD term I2 end
+		gate WFAC13_QT47 term A1 end
+		gate CNT_1_IOPAD term I2 end
+		gate CNT_0_IOPAD term I2 end
+		gate WFAC15 term A1 end
+		gate ADDR_15_IOPAD term I2 end
+		gate ADDR_14_IOPAD term I2 end
+		gate ADDR_13_IOPAD term I2 end
+		gate WFAC20_QT50 term A1 end
+		gate ADDR_12_IOPAD term I2 end
+		gate ADDR_11_IOPAD term I2 end
+		gate ADDR_10_IOPAD term I2 end
+		gate WFAC20_QT52 term A2 end
+		gate WFAC20_QT51 term A1 end
+		gate ADDR_9_IOPAD term I2 end
+		gate ADDR_8_IOPAD term I2 end
+		gate WFAC24_QT53 term A2 end
+		gate ADDR_7_IOPAD term I2 end
+		gate ADDR_6_IOPAD term I2 end
+		gate WFAC24_QT55 term A1 end
+		gate ADDR_5_IOPAD term I2 end
+		gate ADDR_4_IOPAD term I2 end
+		gate WFAC28_QT56 term A2 end
+		gate ADDR_3_IOPAD term I2 end
+		gate ADDR_2_IOPAD term I2 end
+		gate WFAC28_QT58 term A1 end
+		gate ADDR_1_IOPAD term I2 end
+		gate ADDR_0_IOPAD term I2 end
+		gate WFAC31_QT59 term A2 end
+		gate ADS_IOPAD term I2 end
+		gate WFAC32 term A1 end
+		gate WFAC32 term A2 end
+		gate WFAC33 term A1 end
+		gate NEXT_STATESBV_0_DIV1_QT62 term A1 end
+		gate NEXT_STATESBV_0_DIV1_QT62 term A2 end
+		gate NEXT_STATESBV_0_DIV1_QT63 term A1 end
+		gate NEXT_STATESBV_0_DIV1_QT63 term A2 end
+		gate NEXT_STATESBV_0_DIV1_QT61 term A1 end
+		gate NEXT_STATESBV_0_DIV1 term A1 end
+		gate NEXT_STATESBV_0_DIV1 term A2 end
+	end
+	net GND
+		gate SET_4_IOPAD term I2 end
+		gate SET_3_QT3 term A2I end
+		gate SET_3_QT5 term A1I end
+		gate SET_3_QT5 term A2I end
+		gate SET_3_QT2 term A1I end
+		gate SET_3_QT2 term A2I end
+		gate SET_3_QT1 term A2I end
+		gate SET_3_IOPAD term I2 end
+		gate SET_2_QT10 term A2I end
+		gate SET_2_QT8 term A1I end
+		gate SET_2_QT8 term A2I end
+		gate SET_2_IOPAD term I2 end
+		gate NEXT_STATESBV_0_QT13 term A1I end
+		gate NEXT_STATESBV_0_QT13 term A2I end
+		gate NEXT_STATESBV_0_QT14 term A1I end
+		gate NEXT_STATESBV_0_QT15 term A1I end
+		gate NEXT_STATESBV_0_QT15 term A2I end
+		gate NEXT_STATESBV_0_QT12 term A2I end
+		gate NEXT_STATESBV_0 term A2I end
+		gate NEXT_STATESBV_1_QT18 term A1I end
+		gate NEXT_STATESBV_1_QT18 term A2I end
+		gate NEXT_STATESBV_1_QT19 term A2I end
+		gate NEXT_STATESBV_1 term A2I end
+		gate REF_IOPAD term IE end
+		gate REF_IOPAD term I1 end
+		gate NEXT_STATESBV_15 term A1I end
+		gate NEXT_STATESBV_15 term A2I end
+		gate NEXT_STATESBV_7_QT20 term A1I end
+		gate READ_IOPAD term IE end
+		gate READ_IOPAD term I1 end
+		gate NEXT_STATESBV_7_QT21 term A1I end
+		gate NEXT_STATESBV_7_QT21 term A2I end
+		gate NEXT_STATESBV_7 term A1I end
+		gate NEXT_STATESBV_7 term A2I end
+		gate NEXT_STATESBV_2_QT22 term A1I end
+		gate NEXT_STATESBV_2_QT23 term A2I end
+		gate NEXT_STATESBV_2 term A1I end
+		gate NEXT_STATESBV_2 term A2I end
+		gate NEXT_STATESBV_3_QT25 term A2I end
+		gate NEXT_STATESBV_3 term A2I end
+		gate BURST_IOPAD term IE end
+		gate BURST_IOPAD term I1 end
+		gate NEXT_STATESBV_4_QT26 term A1I end
+		gate NEXT_STATESBV_4_QT26 term A2I end
+		gate NEXT_STATESBV_4 term A1I end
+		gate NEXT_STATESBV_4 term A2I end
+		gate NEXT_STATESBV_6_QT28 term A2I end
+		gate NEXT_STATESBV_6 term A2I end
+		gate NEXT_STATESBV_8_QT30 term A2I end
+		gate NEXT_STATESBV_8 term A2I end
+		gate NEXT_STATESBV_9_QT31 term A1I end
+		gate NEXT_STATESBV_9_QT31 term A2I end
+		gate NEXT_STATESBV_9 term A1I end
+		gate NEXT_STATESBV_9 term A2I end
+		gate NEXT_STATESBV_10_QT33 term A2I end
+		gate NEXT_STATESBV_10 term A2I end
+		gate NEXT_STATESBV_11 term A1I end
+		gate NEXT_STATESBV_11 term A2I end
+		gate NEXT_STATESBV_12_QT35 term A2I end
+		gate NEXT_STATESBV_12 term A2I end
+		gate NEXT_STATESBV_13 term A1I end
+		gate NEXT_STATESBV_13 term A2I end
+		gate NEXT_STATESBV_14_QT37 term A2I end
+		gate NEXT_STATESBV_14 term A2I end
+		gate NEXT_STATESBV_16_QT39 term A1I end
+		gate NEXT_STATESBV_16 term A2I end
+		gate CNT_15_IOPAD term IE end
+		gate CNT_15_IOPAD term I1 end
+		gate CNT_14_IOPAD term IE end
+		gate CNT_14_IOPAD term I1 end
+		gate CNT_13_IOPAD term IE end
+		gate CNT_13_IOPAD term I1 end
+		gate WFAC2_QT40 term A1I end
+		gate WFAC2_QT40 term A2I end
+		gate WFAC2 term A1I end
+		gate WFAC2 term A2I end
+		gate CNT_12_IOPAD term IE end
+		gate CNT_12_IOPAD term I1 end
+		gate CNT_11_IOPAD term IE end
+		gate CNT_11_IOPAD term I1 end
+		gate WFAC4_QT41 term A1I end
+		gate WFAC4_QT41 term A2I end
+		gate WFAC4 term A1I end
+		gate WFAC4 term A2I end
+		gate CNT_10_IOPAD term IE end
+		gate CNT_10_IOPAD term I1 end
+		gate CNT_9_IOPAD term IE end
+		gate CNT_9_IOPAD term I1 end
+		gate WFAC6_QT42 term A1I end
+		gate WFAC6_QT42 term A2I end
+		gate WFAC6 term A1I end
+		gate WFAC6 term A2I end
+		gate CNT_8_IOPAD term IE end
+		gate CNT_8_IOPAD term I1 end
+		gate CNT_7_IOPAD term IE end
+		gate CNT_7_IOPAD term I1 end
+		gate WFAC10_QT43 term A1I end
+		gate CNT_6_IOPAD term IE end
+		gate CNT_6_IOPAD term I1 end
+		gate CNT_5_IOPAD term IE end
+		gate CNT_5_IOPAD term I1 end
+		gate WFAC10_QT45 term A2I end
+		gate WFAC10_QT44 term A2I end
+		gate WFAC10 term A1I end
+		gate WFAC10 term A2I end
+		gate CNT_4_IOPAD term IE end
+		gate CNT_4_IOPAD term I1 end
+		gate CNT_3_IOPAD term IE end
+		gate CNT_3_IOPAD term I1 end
+		gate CNT_2_IOPAD term IE end
+		gate CNT_2_IOPAD term I1 end
+		gate WFAC13_QT47 term A2I end
+		gate WFAC13 term A1I end
+		gate WFAC13 term A2I end
+		gate CNT_1_IOPAD term IE end
+		gate CNT_1_IOPAD term I1 end
+		gate CNT_0_IOPAD term IE end
+		gate CNT_0_IOPAD term I1 end
+		gate WFAC15_QT48 term A1I end
+		gate WFAC15_QT48 term A2I end
+		gate WFAC15 term A2I end
+		gate ADDR_15_IOPAD term IE end
+		gate ADDR_15_IOPAD term I1 end
+		gate ADDR_14_IOPAD term IE end
+		gate ADDR_14_IOPAD term I1 end
+		gate ADDR_13_IOPAD term IE end
+		gate ADDR_13_IOPAD term I1 end
+		gate WFAC20_QT50 term A2I end
+		gate WFAC20_QT49 term A1I end
+		gate WFAC20_QT49 term A2I end
+		gate ADDR_12_IOPAD term IE end
+		gate ADDR_12_IOPAD term I1 end
+		gate ADDR_11_IOPAD term IE end
+		gate ADDR_11_IOPAD term I1 end
+		gate ADDR_10_IOPAD term IE end
+		gate ADDR_10_IOPAD term I1 end
+		gate WFAC20_QT52 term A1I end
+		gate WFAC20_QT51 term A2I end
+		gate WFAC20 term A1I end
+		gate WFAC20 term A2I end
+		gate ADDR_9_IOPAD term IE end
+		gate ADDR_9_IOPAD term I1 end
+		gate ADDR_8_IOPAD term IE end
+		gate ADDR_8_IOPAD term I1 end
+		gate WFAC24_QT53 term A1I end
+		gate ADDR_7_IOPAD term IE end
+		gate ADDR_7_IOPAD term I1 end
+		gate ADDR_6_IOPAD term IE end
+		gate ADDR_6_IOPAD term I1 end
+		gate WFAC24_QT55 term A2I end
+		gate WFAC24_QT54 term A1I end
+		gate WFAC24_QT54 term A2I end
+		gate WFAC24 term A1I end
+		gate WFAC24 term A2I end
+		gate ADDR_5_IOPAD term IE end
+		gate ADDR_5_IOPAD term I1 end
+		gate ADDR_4_IOPAD term IE end
+		gate ADDR_4_IOPAD term I1 end
+		gate WFAC28_QT56 term A1I end
+		gate ADDR_3_IOPAD term IE end
+		gate ADDR_3_IOPAD term I1 end
+		gate ADDR_2_IOPAD term IE end
+		gate ADDR_2_IOPAD term I1 end
+		gate WFAC28_QT58 term A2I end
+		gate WFAC28_QT57 term A1I end
+		gate WFAC28_QT57 term A2I end
+		gate WFAC28 term A1I end
+		gate WFAC28 term A2I end
+		gate ADDR_1_IOPAD term IE end
+		gate ADDR_1_IOPAD term I1 end
+		gate ADDR_0_IOPAD term IE end
+		gate ADDR_0_IOPAD term I1 end
+		gate WFAC31_QT59 term A1I end
+		gate ADS_IOPAD term IE end
+		gate ADS_IOPAD term I1 end
+		gate WFAC31_QT60 term A1I end
+		gate WFAC31_QT60 term A2I end
+		gate WFAC31 term A1I end
+		gate WFAC31 term A2I end
+		gate WFAC33 term A2I end
+		gate NEXT_STATESBV_0_DIV1_QT61 term A2I end
+		gate NEXT_STATESBV_0_DIV1 term A2I end
+		gate PRESENT_STATESBV_16 term S end
+		gate PRESENT_STATESBV_14 term S end
+		gate PRESENT_STATESBV_8 term S end
+		gate PRESENT_STATESBV_6 term S end
+		gate PRESENT_STATESBV_3 term S end
+		gate SET_0 term R end
+		gate SET_1 term S end
+		gate PRESENT_STATESBV_2 term S end
+		gate NEXT_STATESBV_5 term S end
+		gate PRESENT_STATESBV_5 term S end
+		gate PRESENT_STATESBV_7 term S end
+		gate PRESENT_STATESBV_9 term S end
+		gate PRESENT_STATESBV_10 term S end
+		gate PRESENT_STATESBV_11 term S end
+		gate PRESENT_STATESBV_12 term S end
+		gate PRESENT_STATESBV_13 term S end
+		gate PRESENT_STATESBV_15 term S end
+	end
+	net RST_IN
+		gate PRESENT_STATESBV_16 term R end
+		gate PRESENT_STATESBV_14 term R end
+		gate PRESENT_STATESBV_8 term R end
+		gate PRESENT_STATESBV_6 term R end
+		gate PRESENT_STATESBV_3 term R end
+		gate SET_0 term S end
+		gate SET_1 term R end
+		gate PRESENT_STATESBV_2 term R end
+		gate NEXT_STATESBV_5 term R end
+		gate PRESENT_STATESBV_5 term R end
+		gate PRESENT_STATESBV_7 term R end
+		gate PRESENT_STATESBV_9 term R end
+		gate PRESENT_STATESBV_10 term R end
+		gate PRESENT_STATESBV_11 term R end
+		gate PRESENT_STATESBV_12 term R end
+		gate PRESENT_STATESBV_13 term R end
+		gate PRESENT_STATESBV_15 term R end
+		gate RST_CKPAD term IC end
+	end
+	net CLK_IN
+		gate PRESENT_STATESBV_16 term CLK end
+		gate PRESENT_STATESBV_14 term CLK end
+		gate PRESENT_STATESBV_8 term CLK end
+		gate PRESENT_STATESBV_6 term CLK end
+		gate PRESENT_STATESBV_3 term CLK end
+		gate SET_0 term CLK end
+		gate SET_1 term CLK end
+		gate PRESENT_STATESBV_2 term CLK end
+		gate NEXT_STATESBV_5 term CLK end
+		gate PRESENT_STATESBV_5 term CLK end
+		gate PRESENT_STATESBV_7 term CLK end
+		gate PRESENT_STATESBV_9 term CLK end
+		gate PRESENT_STATESBV_10 term CLK end
+		gate PRESENT_STATESBV_11 term CLK end
+		gate PRESENT_STATESBV_12 term CLK end
+		gate PRESENT_STATESBV_13 term CLK end
+		gate PRESENT_STATESBV_15 term CLK end
+		gate CLK_CKPAD term IC end
+	end
+	net SET_0_OUT
+		gate SET_0_IOPAD term I2 end
+		gate SET_0 term Q end
+		gate NEXT_STATESBV_0_QT14 term A1 end
+		gate NEXT_STATESBV_1_QT18 term A1 end
+	end
+	net SET_1_OUT
+		gate SET_1_IOPAD term I2 end
+		gate SET_1 term Q end
+		gate NEXT_STATESBV_15 term A2 end
+		gate NEXT_STATESBV_7_QT21 term A2 end
+		gate NEXT_STATESBV_2_QT23 term A2 end
+		gate WFAC33 term A2 end
+	end
+	net SET_4_OUT
+	end
+	net SET_4_QT0
+		gate SET_4_QT0 term Q end
+		gate SET_4_IOPAD term I1 end
+	end
+	net SET_3_OUT
+	end
+	net SET_3_QT4
+		gate SET_3_QT4 term Q end
+		gate SET_3_QT3 term A2 end
+	end
+	net SET_3_QT3
+		gate SET_3_QT3 term Q end
+		gate SET_3_QT2 term A1 end
+	end
+	net SET_3_QT6
+		gate SET_3_QT6 term Q end
+		gate SET_3_QT5 term A1 end
+	end
+	net SET_3_QT7
+		gate SET_3_QT7 term Q end
+		gate SET_3_QT5 term A2 end
+	end
+	net SET_3_QT5
+		gate SET_3_QT5 term Q end
+		gate SET_3_QT2 term A2 end
+	end
+	net SET_3_QT2
+		gate SET_3_QT2 term Q end
+		gate SET_3_QT1 term A2 end
+	end
+	net SET_3_QT1
+		gate SET_3_QT1 term Q end
+		gate SET_3_IOPAD term I1 end
+	end
+	net SET_2_OUT
+	end
+	net SET_2_QT9
+		gate SET_2_QT9 term Q end
+		gate SET_2_QT8 term A1 end
+	end
+	net SET_2_QT11
+		gate SET_2_QT11 term Q end
+		gate SET_2_QT10 term A2 end
+	end
+	net SET_2_QT10
+		gate SET_2_QT10 term Q end
+		gate SET_2_QT8 term A2 end
+	end
+	net SET_2_QT8
+		gate SET_2_QT8 term Q end
+		gate SET_2_IOPAD term I1 end
+	end
+	net NEXT_STATESBV_0_QT13
+		gate NEXT_STATESBV_0_QT13 term Q end
+		gate NEXT_STATESBV_0_QT12 term A1I end
+	end
+	net NEXT_STATESBV_0_QT14
+		gate NEXT_STATESBV_0_QT14 term Q end
+		gate NEXT_STATESBV_0_QT16 term A1I end
+	end
+	net RDY_IN
+		gate NEXT_STATESBV_0_QT15 term A1 end
+		gate NEXT_STATESBV_1_QT19 term A1I end
+		gate NEXT_STATESBV_7_QT20 term A1 end
+		gate NEXT_STATESBV_2_QT22 term A1 end
+		gate NEXT_STATESBV_3_QT25 term A1I end
+		gate NEXT_STATESBV_4 term A1 end
+		gate NEXT_STATESBV_6_QT28 term A1I end
+		gate NEXT_STATESBV_8_QT30 term A1I end
+		gate NEXT_STATESBV_9 term A1 end
+		gate NEXT_STATESBV_10_QT33 term A1I end
+		gate NEXT_STATESBV_11 term A1 end
+		gate NEXT_STATESBV_12_QT35 term A1I end
+		gate NEXT_STATESBV_13 term A1 end
+		gate NEXT_STATESBV_14_QT37 term A1I end
+		gate RDY_INPAD term IZ end
+	end
+	net NEXT_STATESBV_0_QT15
+		gate NEXT_STATESBV_0_QT15 term Q end
+		gate NEXT_STATESBV_0_QT16 term A2I end
+	end
+	net NEXT_STATESBV_0_QT16
+		gate NEXT_STATESBV_0_QT16 term Q end
+		gate NEXT_STATESBV_0_QT12 term A2 end
+	end
+	net NEXT_STATESBV_0_QT12
+		gate NEXT_STATESBV_0_QT12 term Q end
+		gate NEXT_STATESBV_0 term A1I end
+	end
+	net NEXT_STATESBV_1_QT18
+		gate NEXT_STATESBV_1_QT18 term Q end
+		gate NEXT_STATESBV_1_QT17 term A1I end
+	end
+	net NEXT_STATESBV_1_QT19
+		gate NEXT_STATESBV_1_QT19 term Q end
+		gate NEXT_STATESBV_1_QT17 term A2I end
+	end
+	net NEXT_STATESBV_1_QT17
+		gate NEXT_STATESBV_1_QT17 term Q end
+		gate NEXT_STATESBV_1 term A1I end
+	end
+	net REF_IN
+		gate REF_IOPAD term IZ end
+		gate NEXT_STATESBV_15 term A1 end
+		gate NEXT_STATESBV_7_QT20 term A2I end
+		gate NEXT_STATESBV_2_QT22 term A2I end
+		gate WFAC33 term A1I end
+	end
+	net NEXT_STATESBV_7_QT20
+		gate NEXT_STATESBV_7_QT20 term Q end
+		gate NEXT_STATESBV_7 term A1 end
+	end
+	net READ_IN
+		gate READ_IOPAD term IZ end
+		gate NEXT_STATESBV_7_QT21 term A1 end
+		gate NEXT_STATESBV_2_QT23 term A1I end
+	end
+	net NEXT_STATESBV_7_QT21
+		gate NEXT_STATESBV_7_QT21 term Q end
+		gate NEXT_STATESBV_7 term A2 end
+	end
+	net NEXT_STATESBV_2_QT22
+		gate NEXT_STATESBV_2_QT22 term Q end
+		gate NEXT_STATESBV_2 term A1 end
+	end
+	net NEXT_STATESBV_2_QT23
+		gate NEXT_STATESBV_2_QT23 term Q end
+		gate NEXT_STATESBV_2 term A2 end
+	end
+	net NEXT_STATESBV_3_QT25
+		gate NEXT_STATESBV_3_QT25 term Q end
+		gate NEXT_STATESBV_3_QT24 term A2I end
+	end
+	net NEXT_STATESBV_3_QT24
+		gate NEXT_STATESBV_3_QT24 term Q end
+		gate NEXT_STATESBV_3 term A1I end
+	end
+	net BURST_IN
+		gate BURST_IOPAD term IZ end
+		gate NEXT_STATESBV_4_QT26 term A1 end
+		gate NEXT_STATESBV_9_QT31 term A1 end
+		gate NEXT_STATESBV_0_DIV1_QT62 term A1I end
+	end
+	net NEXT_STATESBV_4_QT26
+		gate NEXT_STATESBV_4_QT26 term Q end
+		gate NEXT_STATESBV_4 term A2 end
+	end
+	net NEXT_STATESBV_6_QT28
+		gate NEXT_STATESBV_6_QT28 term Q end
+		gate NEXT_STATESBV_6_QT27 term A2I end
+	end
+	net NEXT_STATESBV_6_QT27
+		gate NEXT_STATESBV_6_QT27 term Q end
+		gate NEXT_STATESBV_6 term A1I end
+	end
+	net NEXT_STATESBV_8_QT30
+		gate NEXT_STATESBV_8_QT30 term Q end
+		gate NEXT_STATESBV_8_QT29 term A2I end
+	end
+	net NEXT_STATESBV_8_QT29
+		gate NEXT_STATESBV_8_QT29 term Q end
+		gate NEXT_STATESBV_8 term A1I end
+	end
+	net NEXT_STATESBV_9_QT31
+		gate NEXT_STATESBV_9_QT31 term Q end
+		gate NEXT_STATESBV_9 term A2 end
+	end
+	net NEXT_STATESBV_10_QT33
+		gate NEXT_STATESBV_10_QT33 term Q end
+		gate NEXT_STATESBV_10_QT32 term A2I end
+	end
+	net NEXT_STATESBV_10_QT32
+		gate NEXT_STATESBV_10_QT32 term Q end
+		gate NEXT_STATESBV_10 term A1I end
+	end
+	net NEXT_STATESBV_12_QT35
+		gate NEXT_STATESBV_12_QT35 term Q end
+		gate NEXT_STATESBV_12_QT34 term A2I end
+	end
+	net NEXT_STATESBV_12_QT34
+		gate NEXT_STATESBV_12_QT34 term Q end
+		gate NEXT_STATESBV_12 term A1I end
+	end
+	net NEXT_STATESBV_14_QT37
+		gate NEXT_STATESBV_14_QT37 term Q end
+		gate NEXT_STATESBV_14_QT36 term A2I end
+	end
+	net NEXT_STATESBV_14_QT36
+		gate NEXT_STATESBV_14_QT36 term Q end
+		gate NEXT_STATESBV_14 term A1I end
+	end
+	net NEXT_STATESBV_16_QT39
+		gate NEXT_STATESBV_16_QT39 term Q end
+		gate NEXT_STATESBV_16_QT38 term A2I end
+	end
+	net NEXT_STATESBV_16_QT38
+		gate NEXT_STATESBV_16_QT38 term Q end
+		gate NEXT_STATESBV_16 term A1I end
+	end
+	net CNT_15_IN
+		gate CNT_15_IOPAD term IZ end
+		gate WFAC2 term A1 end
+	end
+	net CNT_14_IN
+		gate CNT_14_IOPAD term IZ end
+		gate WFAC2_QT40 term A1 end
+	end
+	net CNT_13_IN
+		gate CNT_13_IOPAD term IZ end
+		gate WFAC2_QT40 term A2 end
+	end
+	net WFAC2_QT40
+		gate WFAC2_QT40 term Q end
+		gate WFAC2 term A2 end
+	end
+	net CNT_12_IN
+		gate CNT_12_IOPAD term IZ end
+		gate WFAC4 term A1 end
+	end
+	net CNT_11_IN
+		gate CNT_11_IOPAD term IZ end
+		gate WFAC4_QT41 term A1 end
+	end
+	net WFAC4_QT41
+		gate WFAC4_QT41 term Q end
+		gate WFAC4 term A2 end
+	end
+	net CNT_10_IN
+		gate CNT_10_IOPAD term IZ end
+		gate WFAC6 term A1 end
+	end
+	net CNT_9_IN
+		gate CNT_9_IOPAD term IZ end
+		gate WFAC6_QT42 term A1 end
+	end
+	net WFAC6_QT42
+		gate WFAC6_QT42 term Q end
+		gate WFAC6 term A2 end
+	end
+	net CNT_8_IN
+		gate CNT_8_IOPAD term IZ end
+		gate WFAC10_QT43 term A1 end
+	end
+	net CNT_7_IN
+		gate CNT_7_IOPAD term IZ end
+		gate WFAC10_QT43 term A2I end
+	end
+	net WFAC10_QT43
+		gate WFAC10_QT43 term Q end
+		gate WFAC10 term A1 end
+	end
+	net CNT_6_IN
+		gate CNT_6_IOPAD term IZ end
+		gate WFAC10_QT44 term A1I end
+	end
+	net CNT_5_IN
+		gate CNT_5_IOPAD term IZ end
+		gate WFAC10_QT45 term A1I end
+	end
+	net WFAC10_QT45
+		gate WFAC10_QT45 term Q end
+		gate WFAC10_QT44 term A2 end
+	end
+	net WFAC10_QT44
+		gate WFAC10_QT44 term Q end
+		gate WFAC10 term A2 end
+	end
+	net CNT_4_IN
+		gate CNT_4_IOPAD term IZ end
+		gate WFAC13_QT46 term A1I end
+	end
+	net CNT_3_IN
+		gate CNT_3_IOPAD term IZ end
+		gate WFAC13_QT46 term A2I end
+	end
+	net WFAC13_QT46
+		gate WFAC13_QT46 term Q end
+		gate WFAC13 term A1 end
+	end
+	net CNT_2_IN
+		gate CNT_2_IOPAD term IZ end
+		gate WFAC13_QT47 term A1I end
+	end
+	net WFAC13_QT47
+		gate WFAC13_QT47 term Q end
+		gate WFAC13 term A2 end
+	end
+	net CNT_1_IN
+		gate CNT_1_IOPAD term IZ end
+		gate WFAC15 term A1I end
+	end
+	net CNT_0_IN
+		gate CNT_0_IOPAD term IZ end
+		gate WFAC15_QT48 term A1 end
+	end
+	net WFAC15_QT48
+		gate WFAC15_QT48 term Q end
+		gate WFAC15 term A2 end
+	end
+	net ADDR_15_IN
+		gate ADDR_15_IOPAD term IZ end
+		gate WFAC20_QT49 term A1 end
+	end
+	net ADDR_14_IN
+		gate ADDR_14_IOPAD term IZ end
+		gate WFAC20_QT50 term A1I end
+	end
+	net ADDR_13_IN
+		gate ADDR_13_IOPAD term IZ end
+		gate WFAC20_QT50 term A2 end
+	end
+	net WFAC20_QT50
+		gate WFAC20_QT50 term Q end
+		gate WFAC20_QT49 term A2 end
+	end
+	net WFAC20_QT49
+		gate WFAC20_QT49 term Q end
+		gate WFAC20 term A1 end
+	end
+	net ADDR_12_IN
+		gate ADDR_12_IOPAD term IZ end
+		gate WFAC20_QT51 term A1I end
+	end
+	net ADDR_11_IN
+		gate ADDR_11_IOPAD term IZ end
+		gate WFAC20_QT52 term A1 end
+	end
+	net ADDR_10_IN
+		gate ADDR_10_IOPAD term IZ end
+		gate WFAC20_QT52 term A2I end
+	end
+	net WFAC20_QT52
+		gate WFAC20_QT52 term Q end
+		gate WFAC20_QT51 term A2 end
+	end
+	net WFAC20_QT51
+		gate WFAC20_QT51 term Q end
+		gate WFAC20 term A2 end
+	end
+	net ADDR_9_IN
+		gate ADDR_9_IOPAD term IZ end
+		gate WFAC24_QT53 term A1 end
+	end
+	net ADDR_8_IN
+		gate ADDR_8_IOPAD term IZ end
+		gate WFAC24_QT53 term A2I end
+	end
+	net WFAC24_QT53
+		gate WFAC24_QT53 term Q end
+		gate WFAC24 term A1 end
+	end
+	net ADDR_7_IN
+		gate ADDR_7_IOPAD term IZ end
+		gate WFAC24_QT54 term A1 end
+	end
+	net ADDR_6_IN
+		gate ADDR_6_IOPAD term IZ end
+		gate WFAC24_QT55 term A1I end
+	end
+	net WFAC24_QT55
+		gate WFAC24_QT55 term Q end
+		gate WFAC24_QT54 term A2 end
+	end
+	net WFAC24_QT54
+		gate WFAC24_QT54 term Q end
+		gate WFAC24 term A2 end
+	end
+	net ADDR_5_IN
+		gate ADDR_5_IOPAD term IZ end
+		gate WFAC28_QT56 term A1 end
+	end
+	net ADDR_4_IN
+		gate ADDR_4_IOPAD term IZ end
+		gate WFAC28_QT56 term A2I end
+	end
+	net WFAC28_QT56
+		gate WFAC28_QT56 term Q end
+		gate WFAC28 term A1 end
+	end
+	net ADDR_3_IN
+		gate ADDR_3_IOPAD term IZ end
+		gate WFAC28_QT57 term A1 end
+	end
+	net ADDR_2_IN
+		gate ADDR_2_IOPAD term IZ end
+		gate WFAC28_QT58 term A1I end
+	end
+	net WFAC28_QT58
+		gate WFAC28_QT58 term Q end
+		gate WFAC28_QT57 term A2 end
+	end
+	net WFAC28_QT57
+		gate WFAC28_QT57 term Q end
+		gate WFAC28 term A2 end
+	end
+	net ADDR_1_IN
+		gate ADDR_1_IOPAD term IZ end
+		gate WFAC31_QT59 term A1 end
+	end
+	net ADDR_0_IN
+		gate ADDR_0_IOPAD term IZ end
+		gate WFAC31_QT59 term A2I end
+	end
+	net WFAC31_QT59
+		gate WFAC31_QT59 term Q end
+		gate WFAC31 term A1 end
+	end
+	net ADS_IN
+		gate ADS_IOPAD term IZ end
+		gate WFAC31_QT60 term A1 end
+	end
+	net WFAC31_QT60
+		gate WFAC31_QT60 term Q end
+		gate WFAC31 term A2 end
+	end
+	net NEXT_STATESBV_0_DIV1_QT62
+		gate NEXT_STATESBV_0_DIV1_QT62 term Q end
+		gate NEXT_STATESBV_0_DIV1_QT63 term A2I end
+	end
+	net NEXT_STATESBV_0_DIV1_QT63
+		gate NEXT_STATESBV_0_DIV1_QT63 term Q end
+		gate NEXT_STATESBV_0_DIV1_QT61 term A2 end
+	end
+	net NEXT_STATESBV_0_DIV1_QT61
+		gate NEXT_STATESBV_0_DIV1_QT61 term Q end
+		gate NEXT_STATESBV_0_DIV1 term A1I end
+	end
+end

@@ -1,0 +1,1 @@
+xst -ise "C:/USR/USR.ise" -intstyle ise -ifn USR.xst -ofn USR.syr

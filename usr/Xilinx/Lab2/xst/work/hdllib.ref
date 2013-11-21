@@ -1,0 +1,20 @@
+AR dp behavioral C:/usr/Xilinx/Lab2/Datapath.vhd sub00/vhpl16 1255033551
+AR bin2bcdconv my_ckt C:/usr/Xilinx/Lab2/ssegdec_4disp.vhd sub00/vhpl14 1255033555
+EN dp NULL C:/usr/Xilinx/Lab2/Datapath.vhd sub00/vhpl15 1255033550
+EN clk_div_fs NULL C:/usr/Xilinx/Lab2/clk_div_fs.vhd sub00/vhpl05 1255033546
+AR clk_div_fs my_clk_div C:/usr/Xilinx/Lab2/clk_div_fs.vhd sub00/vhpl06 1255033547
+AR mux behavioral C:/usr/Xilinx/Lab2/Mux.vhd sub00/vhpl04 1255033543
+AR datapath behavioral C:/usr/Xilinx/Lab2/Datapath.vhd sub00/vhpl10 1255029414
+EN datapath NULL C:/usr/Xilinx/Lab2/Datapath.vhd sub00/vhpl09 1255029413
+AR reg behavioral C:/usr/Xilinx/Lab2/Reg.vhd sub00/vhpl02 1255033541
+EN bin2bcdconv NULL C:/usr/Xilinx/Lab2/ssegdec_4disp.vhd sub00/vhpl13 1255033554
+EN top NULL C:/usr/Xilinx/Lab2/top.vhd sub00/vhpl00 1255033556
+AR top behavioral C:/usr/Xilinx/Lab2/top.vhd sub00/vhpl17 1255033557
+AR eightbit_adder alladd "E:/8-bit Adder.vhd" sub00/vhpl19 1255033545
+AR sseg_dec my_sseg C:/usr/Xilinx/Lab2/ssegdec_4disp.vhd sub00/vhpl12 1255033553
+EN fsm NULL C:/usr/Xilinx/Lab2/FSM.vhd sub00/vhpl07 1255033548
+EN mux NULL C:/usr/Xilinx/Lab2/Mux.vhd sub00/vhpl03 1255033542
+EN reg NULL C:/usr/Xilinx/Lab2/Reg.vhd sub00/vhpl01 1255033540
+EN sseg_dec NULL C:/usr/Xilinx/Lab2/ssegdec_4disp.vhd sub00/vhpl11 1255033552
+AR fsm behavioral C:/usr/Xilinx/Lab2/FSM.vhd sub00/vhpl08 1255033549
+EN eightbit_adder NULL "E:/8-bit Adder.vhd" sub00/vhpl18 1255033544

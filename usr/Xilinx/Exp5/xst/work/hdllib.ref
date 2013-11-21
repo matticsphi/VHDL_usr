@@ -1,0 +1,26 @@
+AR dp behavioral C:/usr/Xilinx/Exp5/Datapath.vhdl sub00/vhpl19 1256870588
+AR cu behavioral C:/usr/Xilinx/Exp4/CU.vhdl sub00/vhpl17 1256870586
+AR ff behavioral C:/usr/Xilinx/Exp5/FF.vhdl sub00/vhpl07 1256870576
+AR regfile behavioral C:/usr/Xilinx/Exp4/rf.vhdl sub00/vhpl01 1256870570
+EN romrom NULL C:/usr/Xilinx/Exp5/Imem.vhdl sub00/vhpl10 1256870579
+AR bin2bcdconv my_ckt C:/usr/Xilinx/Exp3/ssegdec_4disp.vhd sub00/vhpl23 1256870592
+EN dp NULL C:/usr/Xilinx/Exp5/Datapath.vhdl sub00/vhpl18 1256870587
+EN cu NULL C:/usr/Xilinx/Exp4/CU.vhdl sub00/vhpl16 1256870585
+EN regfile NULL C:/usr/Xilinx/Exp4/rf.vhdl sub00/vhpl00 1256870569
+EN ff NULL C:/usr/Xilinx/Exp5/FF.vhdl sub00/vhpl06 1256870575
+EN clk_div_fs NULL C:/usr/Xilinx/Exp4/clk_div_fs.vhdl sub00/vhpl14 1256870583
+AR clk_div_fs my_clk_div C:/usr/Xilinx/Exp4/clk_div_fs.vhdl sub00/vhpl15 1256870584
+AR romrom behavioral C:/usr/Xilinx/Exp5/Imem.vhdl sub00/vhpl11 1256870580
+AR mux41 behavioral C:/usr/Xilinx/Exp5/Mux41.vhdl sub00/vhpl03 1256870572
+EN bin2bcdconv NULL C:/usr/Xilinx/Exp3/ssegdec_4disp.vhd sub00/vhpl22 1256870591
+AR count_3b count C:/usr/Xilinx/Exp5/Counter.vhdl sub00/vhpl09 1256870578
+EN top NULL C:/usr/Xilinx/Exp4/top.vhdl sub00/vhpl24 1256870593
+AR top behavioral C:/usr/Xilinx/Exp4/top.vhdl sub00/vhpl25 1256870594
+AR eightbit_adder alladd "C:/usr/Xilinx/Exp4/8-bit Adder.vhdl" sub00/vhpl05 1256870574
+AR sseg_dec my_sseg C:/usr/Xilinx/Exp3/ssegdec_4disp.vhd sub00/vhpl21 1256870590
+EN dec39 NULL C:/usr/Xilinx/Exp5/CtrlsDec.vhdl sub00/vhpl12 1256870581
+EN count_3b NULL C:/usr/Xilinx/Exp5/Counter.vhdl sub00/vhpl08 1256870577
+AR dec39 behavioral C:/usr/Xilinx/Exp5/CtrlsDec.vhdl sub00/vhpl13 1256870582
+EN mux41 NULL C:/usr/Xilinx/Exp5/Mux41.vhdl sub00/vhpl02 1256870571
+EN sseg_dec NULL C:/usr/Xilinx/Exp3/ssegdec_4disp.vhd sub00/vhpl20 1256870589
+EN eightbit_adder NULL "C:/usr/Xilinx/Exp4/8-bit Adder.vhdl" sub00/vhpl04 1256870573

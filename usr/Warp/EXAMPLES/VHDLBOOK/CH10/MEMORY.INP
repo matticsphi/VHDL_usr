@@ -1,0 +1,56 @@
+-- test vectors for memory controller
+
+      reset    r/w    ready   burst   	 bus_id   
+	1	0	0	0	00000000  -- reset
+	1	0	0	0	00000000  -- reset
+	1	0	0	0	00000000  -- reset
+	0	0	0	0	00000000  -- wrong address 
+	0	0	0	0	10101010  -- wrong address
+	0	1	0	0	10101010  -- wrong address
+	0	0	1	1	10101010  -- wrong address
+	0	0	0	0	10101010  -- wrong address
+	0	0	1	0	10101010  -- wrong address
+	0	0	1	0	10101010  -- wrong address
+	0	0	1	0	10101010  -- wrong address
+	0	0	0	0	11110011  -- right address, go to decision 
+	0	1	0	0	--------  -- go to read1 
+	0	0	0	0	--------  -- stay in read1, not ready 
+	0	0	1	1	--------  -- go to read2, it's a burst 
+	0	0	1	0	--------  -- go to read3 
+	0	0	0	0	--------  -- stay in read3, not ready
+	0	0	1	0	--------  -- go to read4 
+	0	0	1	0	--------  -- go to idle 
+	0	0	0	0	00111011  -- wrong address
+	0	0	0	0	00111011  -- wrong address
+	0	0	0	0	00111011  -- wrong address
+	0	0	0	0	11110011  -- right address, go to decision 
+	0	1	0	0	--------  -- go to read1 
+	0	0	0	0	--------  -- stay in read1, not ready 
+	0	0	0	0	--------  -- stay in read1, not ready 
+	0	0	1	0	--------  -- go to idle 
+	0	0	0	0	11110011  -- right address, go to decision 
+	0	0	0	0	--------  -- go to write 
+	0	0	1	0	--------  -- go to idle
+	0	0	0	0	11110011  -- right address, go to decision 
+	0	1	0	0	--------  -- go to read1 
+	0	0	1	1	--------  -- go to read2, it's a burst 
+	0	0	1	0	--------  -- go to read3 
+	1	0	1	0	--------  -- reset -- go to idle
+	0	0	0	0	11110011  -- right address, go to decision 
+	0	1	0	0	--------  -- go to read1 
+	0	0	1	1	--------  -- go to read2, it's a burst 
+	0	0	1	0	--------  -- go to read3 
+	0	0	1	0	--------  -- go to read4 
+	0	0	1	0	--------  -- go to idle 
+	0	0	1	0	00111011  -- wrong address
+	0	0	1	0	00111011  -- wrong address
+	0	0	1	0	00111011  -- wrong address
+	0	0	1	0	00111011  -- wrong address
+	0	0	0	0	11110011  -- right address, go to decision 
+	0	0	0	0	11110011  -- go to write 
+	0	0	0	0	11110011  -- stay in write, not ready
+	0	0	0	0	11110011  -- stay in write, not ready
+	0	0	0	0	11110011  -- stay in write, not ready
+	0	0	0	0	11110011  -- stay in write, not ready
+	0	0	1	0	11110011  -- go to idle
+

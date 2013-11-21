@@ -1,0 +1,29 @@
+Release 9.1.03i ngdbuild J.33
+Copyright (c) 1995-2007 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\ISE91\bin\nt\ngdbuild.exe -ise
+C:/usr/Xilinx/Exp6/Exp6.ise -intstyle ise -dd _ngo -nt timestamp -i -p
+xc3s500e-fg320-4 prog_rom.ngc prog_rom.ngd
+
+Reading NGO file "C:/usr/Xilinx/Exp6/prog_rom.ngc" ...
+
+Checking timing specifications ...
+Checking Partitions ...
+Checking expanded design ...
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 67432 kilobytes
+
+Writing NGD file "prog_rom.ngd" ...
+
+Writing NGDBUILD log file "prog_rom.bld"...

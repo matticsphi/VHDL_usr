@@ -1,0 +1,12 @@
+EN clk_div_fs NULL C:/usr/Xilinx/Lab_1/clk_div_fs.vhd sub00/vhpl02 1254429604
+AR bc_dec bc_dec C:/usr/Xilinx/Lab_1/bc_dec.vhd sub00/vhpl09 1254429611
+AR clk_div_fs my_clk_div C:/usr/Xilinx/Lab_1/clk_div_fs.vhd sub00/vhpl03 1254429605
+AR sequencedetector behavioral C:/usr/Xilinx/Lab_1/SequenceDetector.vhd sub00/vhpl01 1254429615
+AR seq_dvr seq_dvr C:/usr/Xilinx/Lab_1/seq_driver.vhd sub00/vhpl05 1254429607
+EN sequencedetector NULL C:/usr/Xilinx/Lab_1/SequenceDetector.vhd sub00/vhpl00 1254429614
+EN seq_dvr NULL C:/usr/Xilinx/Lab_1/seq_driver.vhd sub00/vhpl04 1254429606
+EN fsm NULL C:/usr/Xilinx/Lab_1/FSM.vhd sub00/vhpl06 1254429608
+AR clk_div my_clk_div C:/usr/Xilinx/Lab_1/bc_dec.vhd sub00/vhpl11 1254429613
+EN clk_div NULL C:/usr/Xilinx/Lab_1/bc_dec.vhd sub00/vhpl10 1254429612
+AR fsm behavioral C:/usr/Xilinx/Lab_1/FSM.vhd sub00/vhpl07 1254429609
+EN bc_dec NULL C:/usr/Xilinx/Lab_1/bc_dec.vhd sub00/vhpl08 1254429610

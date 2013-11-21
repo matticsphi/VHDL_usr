@@ -1,0 +1,25 @@
+xst -ise "C:/usr/Xilinx/Exp6/Exp6.ise" -intstyle ise -ifn prog_rom.xst -ofn prog_rom.syr
+ngdbuild -ise "C:/usr/Xilinx/Exp6/Exp6.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "prog_rom.ngc" prog_rom.ngd
+map -ise "C:/usr/Xilinx/Exp6/Exp6.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr b -k 4 -c 100 -o prog_rom_map.ncd prog_rom.ngd prog_rom.pcf
+par -ise "C:/usr/Xilinx/Exp6/Exp6.ise" -w -intstyle ise -ol std -t 1 prog_rom_map.ncd prog_rom.ncd prog_rom.pcf
+trce -ise "C:/usr/Xilinx/Exp6/Exp6.ise" -intstyle ise -e 3 -s 4 -xml prog_rom prog_rom.ncd -o prog_rom.twr prog_rom.pcf
+bitgen -ise "C:/usr/Xilinx/Exp6/Exp6.ise" -intstyle ise -f prog_rom.ut prog_rom.ncd
+bitgen -ise "C:/usr/Xilinx/Exp6/Exp6.ise" -intstyle ise -f prog_rom.ut prog_rom.ncd
+xst -ise "C:/usr/Xilinx/Exp6/Exp6.ise" -intstyle ise -ifn prog_rom.xst -ofn prog_rom.syr
+ngdbuild -ise "C:/usr/Xilinx/Exp6/Exp6.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "prog_rom.ngc" prog_rom.ngd
+map -ise "C:/usr/Xilinx/Exp6/Exp6.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr b -k 4 -c 100 -o prog_rom_map.ncd prog_rom.ngd prog_rom.pcf
+par -ise "C:/usr/Xilinx/Exp6/Exp6.ise" -w -intstyle ise -ol std -t 1 prog_rom_map.ncd prog_rom.ncd prog_rom.pcf
+trce -ise "C:/usr/Xilinx/Exp6/Exp6.ise" -intstyle ise -e 3 -s 4 -xml prog_rom prog_rom.ncd -o prog_rom.twr prog_rom.pcf
+bitgen -ise "C:/usr/Xilinx/Exp6/Exp6.ise" -intstyle ise -f prog_rom.ut prog_rom.ncd
+xst -ise "C:/usr/Xilinx/Exp6/Exp6.ise" -intstyle ise -ifn prog_rom.xst -ofn prog_rom.syr
+ngdbuild -ise "C:/usr/Xilinx/Exp6/Exp6.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "prog_rom.ngc" prog_rom.ngd
+map -ise "C:/usr/Xilinx/Exp6/Exp6.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr b -k 4 -c 100 -o prog_rom_map.ncd prog_rom.ngd prog_rom.pcf
+par -ise "C:/usr/Xilinx/Exp6/Exp6.ise" -w -intstyle ise -ol std -t 1 prog_rom_map.ncd prog_rom.ncd prog_rom.pcf
+trce -ise "C:/usr/Xilinx/Exp6/Exp6.ise" -intstyle ise -e 3 -s 4 -xml prog_rom prog_rom.ncd -o prog_rom.twr prog_rom.pcf
+bitgen -ise "C:/usr/Xilinx/Exp6/Exp6.ise" -intstyle ise -f prog_rom.ut prog_rom.ncd
+xst -ise "C:/usr/Xilinx/Exp6/Exp6.ise" -intstyle ise -ifn prog_rom.xst -ofn prog_rom.syr
+ngdbuild -ise "C:/usr/Xilinx/Exp6/Exp6.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "prog_rom.ngc" prog_rom.ngd
+map -ise "C:/usr/Xilinx/Exp6/Exp6.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr b -k 4 -c 100 -o prog_rom_map.ncd prog_rom.ngd prog_rom.pcf
+par -ise "C:/usr/Xilinx/Exp6/Exp6.ise" -w -intstyle ise -ol std -t 1 prog_rom_map.ncd prog_rom.ncd prog_rom.pcf
+trce -ise "C:/usr/Xilinx/Exp6/Exp6.ise" -intstyle ise -e 3 -s 4 -xml prog_rom prog_rom.ncd -o prog_rom.twr prog_rom.pcf
+bitgen -ise "C:/usr/Xilinx/Exp6/Exp6.ise" -intstyle ise -f prog_rom.ut prog_rom.ncd

@@ -1,0 +1,51 @@
+V3 34
+FL C:/usr/Xilinx/Lab2/clk_div_fs.vhd 2009/09/24.12:34:10 J.33
+EN work/clk_div_fs 1255033546 FL C:/usr/Xilinx/Lab2/clk_div_fs.vhd \
+      PB ieee/std_logic_1164 1173395717 PB ieee/std_logic_arith 1173395718 \
+      PB ieee/STD_LOGIC_UNSIGNED 1173395719
+AR work/clk_div_fs/my_clk_div 1255033547 \
+      FL C:/usr/Xilinx/Lab2/clk_div_fs.vhd EN work/clk_div_fs 1255033546
+FL C:/usr/Xilinx/Lab2/Datapath.vhd 2009/10/08.13:25:36 J.33
+EN work/DP 1255033550 FL C:/usr/Xilinx/Lab2/Datapath.vhd PB ieee/std_logic_1164 1173395717 \
+      PB ieee/std_logic_arith 1173395718 PB ieee/STD_LOGIC_UNSIGNED 1173395719
+AR work/DP/Behavioral 1255033551 \
+      FL C:/usr/Xilinx/Lab2/Datapath.vhd EN work/DP 1255033550 CP Reg CP Mux \
+      CP Eightbit_Adder
+FL C:/usr/Xilinx/Lab2/FSM.vhd 2009/10/08.12:01:00 J.33
+EN work/FSM 1255033548 FL C:/usr/Xilinx/Lab2/FSM.vhd PB ieee/std_logic_1164 1173395717 \
+      PB ieee/std_logic_arith 1173395718 PB ieee/STD_LOGIC_UNSIGNED 1173395719
+AR work/FSM/Behavioral 1255033549 \
+      FL C:/usr/Xilinx/Lab2/FSM.vhd EN work/FSM 1255033548
+FL C:/usr/Xilinx/Lab2/Mux.vhd 2009/10/08.11:59:19 J.33
+EN work/Mux 1255033542 FL C:/usr/Xilinx/Lab2/Mux.vhd PB ieee/std_logic_1164 1173395717 \
+      PB ieee/std_logic_arith 1173395718 PB ieee/STD_LOGIC_UNSIGNED 1173395719
+AR work/Mux/Behavioral 1255033543 \
+      FL C:/usr/Xilinx/Lab2/Mux.vhd EN work/Mux 1255033542
+FL C:/usr/Xilinx/Lab2/Reg.vhd 2009/10/08.12:39:28 J.33
+EN work/Reg 1255033540 FL C:/usr/Xilinx/Lab2/Reg.vhd PB ieee/std_logic_1164 1173395717 \
+      PB ieee/std_logic_arith 1173395718 PB ieee/STD_LOGIC_UNSIGNED 1173395719
+AR work/Reg/Behavioral 1255033541 \
+      FL C:/usr/Xilinx/Lab2/Reg.vhd EN work/Reg 1255033540
+FL C:/usr/Xilinx/Lab2/ssegdec_4disp.vhd 2009/10/08.11:25:55 J.33
+EN work/sseg_dec 1255033552 FL C:/usr/Xilinx/Lab2/ssegdec_4disp.vhd \
+      PB ieee/std_logic_1164 1173395717 PB ieee/std_logic_arith 1173395718 \
+      PB ieee/STD_LOGIC_UNSIGNED 1173395719
+AR work/sseg_dec/my_sseg 1255033553 \
+      FL C:/usr/Xilinx/Lab2/ssegdec_4disp.vhd EN work/sseg_dec 1255033552 \
+      CP bin2bcdconv
+EN work/bin2bcdconv 1255033554 \
+      FL C:/usr/Xilinx/Lab2/ssegdec_4disp.vhd PB ieee/std_logic_1164 1173395717 \
+      PB ieee/std_logic_arith 1173395718 PB ieee/STD_LOGIC_UNSIGNED 1173395719
+AR work/bin2bcdconv/my_ckt 1255033555 \
+      FL C:/usr/Xilinx/Lab2/ssegdec_4disp.vhd EN work/bin2bcdconv 1255033554
+FL C:/usr/Xilinx/Lab2/top.vhd 2009/10/08.12:22:28 J.33
+EN work/top 1255033556 FL C:/usr/Xilinx/Lab2/top.vhd PB ieee/std_logic_1164 1173395717 \
+      PB ieee/std_logic_arith 1173395718 PB ieee/STD_LOGIC_UNSIGNED 1173395719
+AR work/top/Behavioral 1255033557 \
+      FL C:/usr/Xilinx/Lab2/top.vhd EN work/top 1255033556 CP clk_div_fs CP FSM \
+      CP DP CP sseg_dec
+FL "E:/8-bit Adder.vhd" 2009/10/08.13:03:40 J.33
+EN work/Eightbit_Adder 1255033544 FL "E:/8-bit Adder.vhd" PB ieee/std_logic_1164 1173395717 \
+      PB ieee/std_logic_arith 1173395718 PB ieee/STD_LOGIC_UNSIGNED 1173395719
+AR work/Eightbit_Adder/allAdd 1255033545 \
+      FL "E:/8-bit Adder.vhd" EN work/Eightbit_Adder 1255033544

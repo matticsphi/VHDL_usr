@@ -1,0 +1,5 @@
+vhdl work "C:\usr\Xilinx\Lab_1\bc_dec.vhd"
+vhdl work "C:\usr\Xilinx\Lab_1\seq_driver.vhd"
+vhdl work "C:\usr\Xilinx\Lab_1\clk_div_fs.vhd"
+vhdl work "C:\usr\Xilinx\Lab_1\FSM.vhd"
+vhdl work "C:\usr\Xilinx\Lab_1\SequenceDetector.vhd"

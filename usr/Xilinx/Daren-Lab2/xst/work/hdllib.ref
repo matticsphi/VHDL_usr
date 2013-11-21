@@ -1,0 +1,18 @@
+AR eightbit_mux mymux "E:/269 Lab 2/8-bit Mux.vhd" sub00/vhpl05 1255038501
+AR bin2bcdconv my_ckt "E:/269 Lab 2/ssegdec_4disp.vhd" sub00/vhpl15 1255038511
+AR eightbit_register my8bit "E:/269 Lab 2/8-bit Register.vhd" sub00/vhpl01 1255038497
+EN clk_div_fs NULL "E:/269 Lab 2/clk_div_fs.vhd" sub00/vhpl06 1255038502
+AR clk_div_fs my_clk_div "E:/269 Lab 2/clk_div_fs.vhd" sub00/vhpl07 1255038503
+EN eightbit_register NULL "E:/269 Lab 2/8-bit Register.vhd" sub00/vhpl00 1255038496
+EN datapath NULL C:/usr/Xilinx/Daren-Lab2/DataPath.vhd sub00/vhpl10 1255039467
+AR controlunit control "E:/269 Lab 2/Control Unit.vhd" sub00/vhpl09 1255038505
+EN bin2bcdconv NULL "E:/269 Lab 2/ssegdec_4disp.vhd" sub00/vhpl14 1255038510
+AR eightbit_adder alladd "E:/269 Lab 2/8-bit Adder.vhd" sub00/vhpl03 1255038499
+AR sseg_dec my_sseg "E:/269 Lab 2/ssegdec_4disp.vhd" sub00/vhpl13 1255038509
+EN simplecomputer NULL "E:/269 Lab 2/Simple Computer.vhd" sub00/vhpl16 1255038512
+AR simplecomputer behavioral "E:/269 Lab 2/Simple Computer.vhd" sub00/vhpl17 1255038513
+EN controlunit NULL "E:/269 Lab 2/Control Unit.vhd" sub00/vhpl08 1255038504
+EN eightbit_mux NULL "E:/269 Lab 2/8-bit Mux.vhd" sub00/vhpl04 1255038500
+EN sseg_dec NULL "E:/269 Lab 2/ssegdec_4disp.vhd" sub00/vhpl12 1255038508
+EN eightbit_adder NULL "E:/269 Lab 2/8-bit Adder.vhd" sub00/vhpl02 1255038498
+AR datapath mydatapath C:/usr/Xilinx/Daren-Lab2/DataPath.vhd sub00/vhpl11 1255039468

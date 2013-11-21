@@ -1,0 +1,119 @@
+Below is a list of files that contain code listings from the book, VHDL for
+Programmable Logic, published by Addison-Wesley (ISBN 0-201-89573-0). Some
+of the files are used in conjunction with exercises. The files are listed 
+in alphabetical order by chapter, not necessarily the order of appearance 
+in the text.
+
+ch1
+===
+simple.vhd	simple design used in Breakout Exercises 1-1 and 2-2
+
+ch2
+===
+3bcount.vhd	three-bit counter designed for Breakout Exercise 2-1	
+
+ch3
+===
+behave.vhd	4-bit equality comparator described behaviorally	
+boolean.vhd	4-bit equality comparator described with Boolean equations
+dataflow.vhd    4-bit equality comparator described with a when-else construct
+docare.vhd	design used in Breakout Exercise 3-2 to illustrate don't care synthesis
+dontcare.vhd 	design used in Breakout Exercise 3-2 to illustrate don't care synthesis
+errors.vhd	design used in Breakout Exercise 3-3 to interactively correct errors 
+
+ch4
+===
+cnt8_3st.vhd	8-bit counter with 3-state output 
+cnt8_3st2.vhd	8-bit counter with 3-state output (when-else construct)
+cnt8_bi.vhd	8-bit counter with bidirectional I/O	
+cnt8_rp.vhd	8-bit counter with asynchronous reset and preset	
+cntpt.vhd	8-bit counter with product term asynchronous reset	
+cond.vhd	conditional signal assignment	
+dflop.vhd	D-type flip-flop	
+drflop.vhd	D-type flip-flop with asynchronous reset	
+exclusiv.vhd	signal assignment based on mutually exclusive signals
+fifo.vhd	FIFO buffer (tailored to repeater application in ch6)	
+reg8.vhd	8-bit register
+tflop.vhd	T-type flip-flop
+
+ch5
+===
+encode.vhd	state machine w/outputs encoded in state assignment
+fsm.vhd		simple state machine design
+memcont.vhd	state machine w/outputs decoded combinatorially (coded w/ 2 processes)
+memcont2.vhd	state machine coded with one process  
+onehot.vhd	state machine one-hot encoded
+parallel.vhd	state machine w/outputs decoded in parallel output regs
+
+ch6
+===
+\basic 		design directory for basic library components (Breakout Exercise 6-1)
+  ascount.vhd	n-bit counter w/ asynchronous reset, synchronous reset & enable
+  manypkgs.vhd  design file containing 3 packages, which contain all design units here	
+  pdff.vhd	n-bit D-type flip-flop with preset
+  preg.vhd	n-bit register with async preset, synch load
+  rdff.vhd	n-bit register with async reset, synch load
+  reg.vhd	n-bit register with asynch reset/preset, synch load
+  rreg.vhd	n-bit register with asynch reset, synch load
+  synch.vhd	synchronizers (one with async reset, one with asynch preset) 
+  ureg.vhd	n-bit register with asynch reset, synch load for UNSIGNED type
+\am2901		design directory for AM2901 design
+  alu.vhd	alu module 
+  am2901.vhd	top-level design
+  am2901_c.vhd	package with component declarations for all modules
+  mnemnoic.vhd	package with mnemonic's declared as constants
+  out_mux.vhd	output multiplexer module
+  q_reg.vhd	Q-register module
+  ram_regs.vhd  RAM-register module
+  src_op.vhd	source operand multiplexer module
+\repeat		design directory for 100Base T4 network repeater core logic design
+  arbiter8.vhd  8-port arbiter module
+  clock.vhd	clock multiplexer module
+  control.vhd   core controller state machines
+  core.vhd	top level design
+  core_t.vhd	package with component declarations for all modules
+  fifo.vhd	FIFO buffer design
+  port.vhd	port controller
+  symbol.vhd	symbol generator/multiplexer
+
+ch7
+===
+find.vhd	illustrates use of overloaded functions	
+flop8.vhd	illustrates procedures as substitute for component instantiation
+majors.vhd	overloaded majority functions
+myflops.vhd	overloaded dff procedures
+wierdcnt.vhd	unconventional counter, used in text to explain module generation
+
+ch8
+===
+cntrp.vhd	product term reset 
+l8_1.vhd	4-bit counter that resets to 1010
+l8_2.vhd	counters that must be placed in separate logic blocks
+l8_3.vhd	illustrates how resets can/cannot be used 
+l8_4.vhd	illustrates how resets can/cannot be used	
+l8_5.vhd	counters with product term reset
+l8_6.vhd	counters with sum term reset
+l8_7.vhd	complex reset conditions requiring multiple passes through logic array	
+l8_8.vhd	two designs that must be partitioned into separate logic blocks	
+l8_9.vhd	token passing (cascading logic) to limit no. of inputs to a logic block
+l8_10.vhd	virtual substitution leading to a large number of resources	
+l8_11.vhd	limiting virtual substitution to get more efficient designs
+l8_12.vhd	DRAM controller
+l8_13.vhd	DRAM controller with two fsm's clocked on separate phases of clock
+
+ch9
+===
+alu.vhd		modified alu design for resource sharing
+fcadd8_2.vhd	8-bit carry lookahead adder with 2-bit adder groups
+fcadd8_3.vhd	8-bit carry lookahead adder with 2 3-bit and 1 2-bit adder groups
+magcomp.vhd	magnitude comparator
+ripadd_8.vhd	8-bit ripple carry adder
+
+ch10
+====
+alg.vhd		test bench for am2901 design
+cnt3.vhd	simple counter design
+filetst.vhd	test bench using file i/o
+readwrite.vhd	overloaded read/write procedures
+tabular.vhd	test bench using vectors in an embedded truth table
+

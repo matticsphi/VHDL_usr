@@ -1,0 +1,5 @@
+xst -ise "C:/usr/Xilinx/Daren-Lab2/Daren-Lab2.ise" -intstyle ise -ifn DataPath.xst -ofn DataPath.syr
+ngdbuild -ise "C:/usr/Xilinx/Daren-Lab2/Daren-Lab2.ise" -intstyle ise -dd _ngo -nt timestamp -uc "SimpleComputer.ucf" -p xc3s500e-fg320-4 "DataPath.ngc" DataPath.ngd
+map -ise "C:/usr/Xilinx/Daren-Lab2/Daren-Lab2.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr b -k 4 -c 100 -o DataPath_map.ncd DataPath.ngd DataPath.pcf
+par -ise "C:/usr/Xilinx/Daren-Lab2/Daren-Lab2.ise" -w -intstyle ise -ol std -t 1 DataPath_map.ncd DataPath.ncd DataPath.pcf
+trce -ise "C:/usr/Xilinx/Daren-Lab2/Daren-Lab2.ise" -intstyle ise -e 3 -s 4 -xml DataPath DataPath.ncd -o DataPath.twr DataPath.pcf -ucf SimpleComputer.ucf

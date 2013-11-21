@@ -1,0 +1,5 @@
+vhdl work "bc_dec.vhd"
+vhdl work "seq_driver.vhd"
+vhdl work "clk_div_fs.vhd"
+vhdl work "FSM.vhd"
+vhdl work "SequenceDetector.vhd"

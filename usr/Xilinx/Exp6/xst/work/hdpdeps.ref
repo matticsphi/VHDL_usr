@@ -1,0 +1,11 @@
+V3 7
+FL "C:/Documents and Settings/sturm121/Desktop/picoblazeBase/PROG_ROM.VHD" 2009/11/05.12:07:11 J.33
+FL "C:/Documents and Settings/sturm121/Desktop/picoblazeBase2/PROG_ROM.VHD" 2009/11/05.12:15:32 J.33
+EN work/prog_rom 1257452160 \
+      FL "C:/Documents and Settings/sturm121/Desktop/picoblazeBase2/PROG_ROM.VHD" \
+      PB ieee/std_logic_1164 1173395717 PB ieee/std_logic_arith 1173395718 \
+      PB ieee/STD_LOGIC_UNSIGNED 1173395719 LB unisim PH unisim/VCOMPONENTS 1173822169
+AR work/prog_rom/low_level_definition 1257452161 \
+      FL "C:/Documents and Settings/sturm121/Desktop/picoblazeBase2/PROG_ROM.VHD" \
+      EN work/prog_rom 1257452160 CP RAMB16_S18
+FL C:/usr/Xilinx/Exp6/PROG_ROM.VHD 2009/11/05.11:53:13 J.33

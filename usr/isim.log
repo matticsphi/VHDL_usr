@@ -1,0 +1,40 @@
+ command line:
+   ./USR_tb_vhd_isim_beh.exe
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  2697
+
+Fri Jan 07 13:53:36 2011
+
+Total Line Count : 55
+
+ Elaboration time : 0 sec.
+
+ Estimate current memory usage : 117.658 Meg. 
+
+ Total Signals          : 14
+ Total Nets             : 37
+ Total Signal Drivers   : 8
+ Total Blocks           : 6
+ Total Primitive Blocks : 1
+ Total Processes        : 9
+ Total Traceable Variables  : 0
+ Total Scalar Nets and Variables : 37
+ntrace select -o on -n /USR_tb_vhd/clk 
+ntrace select -o on -n /USR_tb_vhd/dr_in 
+ntrace select -o on -n /USR_tb_vhd/dl_in 
+ntrace select -o on -n /USR_tb_vhd/sel 
+ntrace select -o on -n /USR_tb_vhd/p_load 
+ntrace select -o on -n /USR_tb_vhd/d_out 
+ntrace select -o on -n /USR_tb_vhd/d_exp 
+ntrace start 
+run 1000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+
+ Simulation time 0.046875 sec.
+
+ Estimate current memory usage : 123.949 Meg. 
+
+Fri Jan 07 13:54:36 2011
+

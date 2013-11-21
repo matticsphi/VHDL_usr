@@ -1,0 +1,8 @@
+vhdl work "E:\8-bit Adder.vhd"
+vhdl work "C:\usr\Xilinx\Lab2\ssegdec_4disp.vhd"
+vhdl work "C:\usr\Xilinx\Lab2\Reg.vhd"
+vhdl work "C:\usr\Xilinx\Lab2\Mux.vhd"
+vhdl work "C:\usr\Xilinx\Lab2\clk_div_fs.vhd"
+vhdl work "C:\usr\Xilinx\Lab2\FSM.vhd"
+vhdl work "C:\usr\Xilinx\Lab2\Datapath.vhd"
+vhdl work "C:\usr\Xilinx\Lab2\top.vhd"

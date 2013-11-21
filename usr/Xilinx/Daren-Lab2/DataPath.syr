@@ -1,0 +1,405 @@
+Release 9.1.03i - xst J.33
+Copyright (c) 1995-2007 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to ./xst/projnav.tmp
+CPU : 0.00 / 0.17 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Parameter xsthdpdir set to ./xst
+CPU : 0.00 / 0.17 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Reading design: DataPath.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+     9.1) Device utilization summary
+     9.2) Partition Resource Summary
+     9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "DataPath.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "DataPath"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : DataPath
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Library Search Order               : DataPath.lso
+Keep Hierarchy                     : NO
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/usr/Xilinx/Daren-Lab2/DataPath.vhd" in Library work.
+Architecture mydatapath of Entity datapath is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <DataPath> in library <work> (architecture <mydatapath>).
+
+Analyzing hierarchy for entity <Eightbit_Register> in library <work> (architecture <my8bit>).
+
+Analyzing hierarchy for entity <Eightbit_Adder> in library <work> (architecture <alladd>).
+
+Analyzing hierarchy for entity <Eightbit_Mux> in library <work> (architecture <mymux>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <DataPath> in library <work> (Architecture <mydatapath>).
+Entity <DataPath> analyzed. Unit <DataPath> generated.
+
+Analyzing Entity <Eightbit_Register> in library <work> (Architecture <my8bit>).
+Entity <Eightbit_Register> analyzed. Unit <Eightbit_Register> generated.
+
+Analyzing Entity <Eightbit_Adder> in library <work> (Architecture <alladd>).
+Entity <Eightbit_Adder> analyzed. Unit <Eightbit_Adder> generated.
+
+Analyzing Entity <Eightbit_Mux> in library <work> (Architecture <mymux>).
+Entity <Eightbit_Mux> analyzed. Unit <Eightbit_Mux> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Eightbit_Register>.
+    Related source file is "E:/269 Lab 2/8-bit Register.vhd".
+    Found 8-bit register for signal <RegOut>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <Eightbit_Register> synthesized.
+
+
+Synthesizing Unit <Eightbit_Adder>.
+    Related source file is "E:/269 Lab 2/8-bit Adder.vhd".
+WARNING:Xst - Property "use_dsp48" is not applicable for this technology.
+    Found 8-bit adder carry in for signal <AddOut>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <Eightbit_Adder> synthesized.
+
+
+Synthesizing Unit <Eightbit_Mux>.
+    Related source file is "E:/269 Lab 2/8-bit Mux.vhd".
+    Found 8-bit 4-to-1 multiplexer for signal <MuxOut>.
+    Summary:
+	inferred   8 Multiplexer(s).
+Unit <Eightbit_Mux> synthesized.
+
+
+Synthesizing Unit <DataPath>.
+    Related source file is "C:/usr/Xilinx/Daren-Lab2/DataPath.vhd".
+WARNING:Xst:646 - Signal <RB_In> is assigned but never used.
+Unit <DataPath> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 8-bit adder carry in                                  : 1
+# Registers                                            : 3
+ 8-bit register                                        : 3
+# Multiplexers                                         : 1
+ 8-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Loading device for application Rf_Device from file '3s500e.nph' in environment C:\Xilinx\ISE91.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 8-bit adder carry in                                  : 1
+# Registers                                            : 24
+ Flip-Flops                                            : 24
+# Multiplexers                                         : 1
+ 8-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <RA/RegOut_7> in Unit <DataPath> is equivalent to the following 4 FFs/Latches, which will be removed : <RA/RegOut_6> <RA/RegOut_5> <RA/RegOut_4> <RA/RegOut_3> 
+
+Optimizing unit <DataPath> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block DataPath, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 20
+ Flip-Flops                                            : 20
+
+=========================================================================
+
+=========================================================================
+*                          Partition Report                             *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : DataPath.ngr
+Top Level Output File Name         : DataPath
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 23
+
+Cell Usage :
+# BELS                             : 32
+#      LUT2                        : 7
+#      LUT4                        : 9
+#      MUXCY                       : 7
+#      MUXF5                       : 1
+#      XORCY                       : 8
+# FlipFlops/Latches                : 20
+#      FDRE                        : 20
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 22
+#      IBUF                        : 14
+#      OBUF                        : 8
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      12  out of   4656     0%  
+ Number of Slice Flip Flops:            20  out of   9312     0%  
+ Number of 4 input LUTs:                16  out of   9312     0%  
+ Number of IOs:                         23
+ Number of bonded IOBs:                 23  out of    232     9%  
+ Number of GCLKs:                        1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+SCLK                               | BUFGP                  | 20    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 4.927ns (Maximum Frequency: 202.963MHz)
+   Minimum input arrival time before clock: 6.112ns
+   Maximum output required time after clock: 4.394ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'SCLK'
+  Clock period: 4.927ns (frequency: 202.963MHz)
+  Total number of paths / destination ports: 166 / 8
+-------------------------------------------------------------------------
+Delay:               4.927ns (Levels of Logic = 10)
+  Source:            RB/RegOut_0 (FF)
+  Destination:       ACC/RegOut_7 (FF)
+  Source Clock:      SCLK rising
+  Destination Clock: SCLK rising
+
+  Data Path: RB/RegOut_0 to ACC/RegOut_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             1   0.591   0.499  RB/RegOut_0 (RB/RegOut_0)
+     LUT4:I1->O            1   0.704   0.499  Mux/Mmux_MuxOut_2_f5 (MuxOut<0>)
+     LUT2:I1->O            1   0.704   0.000  Adder/Madd_AddOut_lut<0> (N51)
+     MUXCY:S->O            1   0.464   0.000  Adder/Madd_AddOut_cy<0> (Adder/Madd_AddOut_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  Adder/Madd_AddOut_cy<1> (Adder/Madd_AddOut_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Adder/Madd_AddOut_cy<2> (Adder/Madd_AddOut_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Adder/Madd_AddOut_cy<3> (Adder/Madd_AddOut_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Adder/Madd_AddOut_cy<4> (Adder/Madd_AddOut_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Adder/Madd_AddOut_cy<5> (Adder/Madd_AddOut_cy<5>)
+     MUXCY:CI->O           0   0.059   0.000  Adder/Madd_AddOut_cy<6> (Adder/Madd_AddOut_cy<6>)
+     XORCY:CI->O           1   0.804   0.000  Adder/Madd_AddOut_xor<7> (AddOut<7>)
+     FDRE:D                    0.308          ACC/RegOut_7
+    ----------------------------------------
+    Total                      4.927ns (3.929ns logic, 0.998ns route)
+                                       (79.7% logic, 20.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'SCLK'
+  Total number of paths / destination ports: 190 / 60
+-------------------------------------------------------------------------
+Offset:              6.112ns (Levels of Logic = 11)
+  Source:            CTRL<2> (PAD)
+  Destination:       ACC/RegOut_7 (FF)
+  Destination Clock: SCLK rising
+
+  Data Path: CTRL<2> to ACC/RegOut_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            10   1.218   1.057  CTRL_2_IBUF (CTRL_2_IBUF)
+     LUT4:I0->O            1   0.704   0.499  Mux/Mmux_MuxOut_2_f5 (MuxOut<0>)
+     LUT2:I1->O            1   0.704   0.000  Adder/Madd_AddOut_lut<0> (N51)
+     MUXCY:S->O            1   0.464   0.000  Adder/Madd_AddOut_cy<0> (Adder/Madd_AddOut_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  Adder/Madd_AddOut_cy<1> (Adder/Madd_AddOut_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Adder/Madd_AddOut_cy<2> (Adder/Madd_AddOut_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Adder/Madd_AddOut_cy<3> (Adder/Madd_AddOut_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Adder/Madd_AddOut_cy<4> (Adder/Madd_AddOut_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Adder/Madd_AddOut_cy<5> (Adder/Madd_AddOut_cy<5>)
+     MUXCY:CI->O           0   0.059   0.000  Adder/Madd_AddOut_cy<6> (Adder/Madd_AddOut_cy<6>)
+     XORCY:CI->O           1   0.804   0.000  Adder/Madd_AddOut_xor<7> (AddOut<7>)
+     FDRE:D                    0.308          ACC/RegOut_7
+    ----------------------------------------
+    Total                      6.112ns (4.556ns logic, 1.556ns route)
+                                       (74.5% logic, 25.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'SCLK'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              4.394ns (Levels of Logic = 1)
+  Source:            ACC/RegOut_7 (FF)
+  Destination:       ACC_Final<7> (PAD)
+  Source Clock:      SCLK rising
+
+  Data Path: ACC/RegOut_7 to ACC_Final<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             3   0.591   0.531  ACC/RegOut_7 (ACC/RegOut_7)
+     OBUF:I->O                 3.272          ACC_Final_7_OBUF (ACC_Final<7>)
+    ----------------------------------------
+    Total                      4.394ns (3.863ns logic, 0.531ns route)
+                                       (87.9% logic, 12.1% route)
+
+=========================================================================
+CPU : 3.31 / 3.52 s | Elapsed : 3.00 / 4.00 s
+ 
+--> 
+
+Total memory usage is 157568 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

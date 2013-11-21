@@ -1,0 +1,39 @@
+xst -ise "C:/usr/Xilinx/Daren-Lab2/Daren-Lab2.ise" -intstyle ise -ifn SimpleComputer.xst -ofn SimpleComputer.syr
+xst -ise "C:/usr/Xilinx/Daren-Lab2/Daren-Lab2.ise" -intstyle ise -ifn SimpleComputer.xst -ofn SimpleComputer.syr
+xst -ise "C:/usr/Xilinx/Daren-Lab2/Daren-Lab2.ise" -intstyle ise -ifn SimpleComputer.xst -ofn SimpleComputer.syr
+xst -ise "C:/usr/Xilinx/Daren-Lab2/Daren-Lab2.ise" -intstyle ise -ifn SimpleComputer.xst -ofn SimpleComputer.syr
+xst -ise "C:/usr/Xilinx/Daren-Lab2/Daren-Lab2.ise" -intstyle ise -ifn SimpleComputer.xst -ofn SimpleComputer.syr
+xst -ise "C:/usr/Xilinx/Daren-Lab2/Daren-Lab2.ise" -intstyle ise -ifn SimpleComputer.xst -ofn SimpleComputer.syr
+xst -ise "C:/usr/Xilinx/Daren-Lab2/Daren-Lab2.ise" -intstyle ise -ifn SimpleComputer.xst -ofn SimpleComputer.syr
+xst -ise "C:/usr/Xilinx/Daren-Lab2/Daren-Lab2.ise" -intstyle ise -ifn SimpleComputer.xst -ofn SimpleComputer.syr
+xst -ise "C:/usr/Xilinx/Daren-Lab2/Daren-Lab2.ise" -intstyle ise -ifn SimpleComputer.xst -ofn SimpleComputer.syr
+xst -ise "C:/usr/Xilinx/Daren-Lab2/Daren-Lab2.ise" -intstyle ise -ifn SimpleComputer.xst -ofn SimpleComputer.syr
+xst -ise "C:/usr/Xilinx/Daren-Lab2/Daren-Lab2.ise" -intstyle ise -ifn SimpleComputer.xst -ofn SimpleComputer.syr
+xst -ise "C:/usr/Xilinx/Daren-Lab2/Daren-Lab2.ise" -intstyle ise -ifn SimpleComputer.xst -ofn SimpleComputer.syr
+xst -ise "C:/usr/Xilinx/Daren-Lab2/Daren-Lab2.ise" -intstyle ise -ifn SimpleComputer.xst -ofn SimpleComputer.syr
+xst -ise "C:/usr/Xilinx/Daren-Lab2/Daren-Lab2.ise" -intstyle ise -ifn SimpleComputer.xst -ofn SimpleComputer.syr
+xst -ise "C:/usr/Xilinx/Daren-Lab2/Daren-Lab2.ise" -intstyle ise -ifn SimpleComputer.xst -ofn SimpleComputer.syr
+xst -ise "C:/usr/Xilinx/Daren-Lab2/Daren-Lab2.ise" -intstyle ise -ifn SimpleComputer.xst -ofn SimpleComputer.syr
+xst -ise "C:/usr/Xilinx/Daren-Lab2/Daren-Lab2.ise" -intstyle ise -ifn SimpleComputer.xst -ofn SimpleComputer.syr
+ngdbuild -ise "C:/usr/Xilinx/Daren-Lab2/Daren-Lab2.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "SimpleComputer.ngc" SimpleComputer.ngd
+map -ise "C:/usr/Xilinx/Daren-Lab2/Daren-Lab2.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr b -k 4 -c 100 -o SimpleComputer_map.ncd SimpleComputer.ngd SimpleComputer.pcf
+par -ise "C:/usr/Xilinx/Daren-Lab2/Daren-Lab2.ise" -w -intstyle ise -ol std -t 1 SimpleComputer_map.ncd SimpleComputer.ncd SimpleComputer.pcf
+trce -ise "C:/usr/Xilinx/Daren-Lab2/Daren-Lab2.ise" -intstyle ise -e 3 -s 4 -xml SimpleComputer SimpleComputer.ncd -o SimpleComputer.twr SimpleComputer.pcf
+bitgen -ise "C:/usr/Xilinx/Daren-Lab2/Daren-Lab2.ise" -intstyle ise -f SimpleComputer.ut SimpleComputer.ncd
+bitgen -ise "C:/usr/Xilinx/Daren-Lab2/Daren-Lab2.ise" -intstyle ise -f SimpleComputer.ut SimpleComputer.ncd
+xst -ise "C:/usr/Xilinx/Daren-Lab2/Daren-Lab2.ise" -intstyle ise -ifn SimpleComputer.xst -ofn SimpleComputer.syr
+xst -ise "C:/usr/Xilinx/Daren-Lab2/Daren-Lab2.ise" -intstyle ise -ifn SimpleComputer.xst -ofn SimpleComputer.syr
+xst -ise "C:/usr/Xilinx/Daren-Lab2/Daren-Lab2.ise" -intstyle ise -ifn SimpleComputer.xst -ofn SimpleComputer.syr
+ngdbuild -ise "C:/usr/Xilinx/Daren-Lab2/Daren-Lab2.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "SimpleComputer.ngc" SimpleComputer.ngd
+map -ise "C:/usr/Xilinx/Daren-Lab2/Daren-Lab2.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr b -k 4 -c 100 -o SimpleComputer_map.ncd SimpleComputer.ngd SimpleComputer.pcf
+par -ise "C:/usr/Xilinx/Daren-Lab2/Daren-Lab2.ise" -w -intstyle ise -ol std -t 1 SimpleComputer_map.ncd SimpleComputer.ncd SimpleComputer.pcf
+trce -ise "C:/usr/Xilinx/Daren-Lab2/Daren-Lab2.ise" -intstyle ise -e 3 -s 4 -xml SimpleComputer SimpleComputer.ncd -o SimpleComputer.twr SimpleComputer.pcf
+bitgen -ise "C:/usr/Xilinx/Daren-Lab2/Daren-Lab2.ise" -intstyle ise -f SimpleComputer.ut SimpleComputer.ncd
+ngdbuild -ise "C:/usr/Xilinx/Daren-Lab2/Daren-Lab2.ise" -intstyle ise -dd _ngo -nt timestamp -uc "SimpleComputer.ucf" -p xc3s500e-fg320-4 "SimpleComputer.ngc" SimpleComputer.ngd
+map -ise "C:/usr/Xilinx/Daren-Lab2/Daren-Lab2.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr b -k 4 -c 100 -o SimpleComputer_map.ncd SimpleComputer.ngd SimpleComputer.pcf
+par -ise "C:/usr/Xilinx/Daren-Lab2/Daren-Lab2.ise" -w -intstyle ise -ol std -t 1 SimpleComputer_map.ncd SimpleComputer.ncd SimpleComputer.pcf
+trce -ise "C:/usr/Xilinx/Daren-Lab2/Daren-Lab2.ise" -intstyle ise -e 3 -s 4 -xml SimpleComputer SimpleComputer.ncd -o SimpleComputer.twr SimpleComputer.pcf -ucf SimpleComputer.ucf
+ngdbuild -ise "C:/usr/Xilinx/Daren-Lab2/Daren-Lab2.ise" -intstyle ise -dd _ngo -nt timestamp -uc "SimpleComputer.ucf" -p xc3s500e-fg320-4 "SimpleComputer.ngc" SimpleComputer.ngd
+map -ise "C:/usr/Xilinx/Daren-Lab2/Daren-Lab2.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr b -k 4 -c 100 -o SimpleComputer_map.ncd SimpleComputer.ngd SimpleComputer.pcf
+par -ise "C:/usr/Xilinx/Daren-Lab2/Daren-Lab2.ise" -w -intstyle ise -ol std -t 1 SimpleComputer_map.ncd SimpleComputer.ncd SimpleComputer.pcf
+trce -ise "C:/usr/Xilinx/Daren-Lab2/Daren-Lab2.ise" -intstyle ise -e 3 -s 4 -xml SimpleComputer SimpleComputer.ncd -o SimpleComputer.twr SimpleComputer.pcf -ucf SimpleComputer.ucf

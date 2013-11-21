@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<DeviceUsageSummary rev="9">
+<DesignStatistics TimeStamp="Thu Nov 05 12:16:22 2009"><group name="NetStatistics">
+<item name="NumNets_Active" rev="9">
+<attrib name="value" value="59"/></item>
+<item name="NumNets_Gnd" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="NumNets_Vcc" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Active_BRAMADDR" rev="9">
+<attrib name="value" value="10"/></item>
+<item name="NumNodesOfType_Active_BRAMDUMMY" rev="9">
+<attrib name="value" value="18"/></item>
+<item name="NumNodesOfType_Active_CLKPIN" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Active_DOUBLE" rev="9">
+<attrib name="value" value="73"/></item>
+<item name="NumNodesOfType_Active_DUMMY" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Active_DUMMYBANK" rev="9">
+<attrib name="value" value="10"/></item>
+<item name="NumNodesOfType_Active_DUMMYESC" rev="9">
+<attrib name="value" value="11"/></item>
+<item name="NumNodesOfType_Active_GLOBAL" rev="9">
+<attrib name="value" value="5"/></item>
+<item name="NumNodesOfType_Active_HFULLHEX" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Active_HUNIHEX" rev="9">
+<attrib name="value" value="7"/></item>
+<item name="NumNodesOfType_Active_INPUT" rev="9">
+<attrib name="value" value="47"/></item>
+<item name="NumNodesOfType_Active_IOBOUTPUT" rev="9">
+<attrib name="value" value="11"/></item>
+<item name="NumNodesOfType_Active_OMUX" rev="9">
+<attrib name="value" value="10"/></item>
+<item name="NumNodesOfType_Active_OUTPUT" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Active_VFULLHEX" rev="9">
+<attrib name="value" value="4"/></item>
+<item name="NumNodesOfType_Active_VUNIHEX" rev="9">
+<attrib name="value" value="9"/></item>
+<item name="NumNodesOfType_Gnd_BRAMDUMMY" rev="9">
+<attrib name="value" value="2"/></item>
+<item name="NumNodesOfType_Gnd_DOUBLE" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Gnd_INPUT" rev="9">
+<attrib name="value" value="2"/></item>
+<item name="NumNodesOfType_Gnd_OMUX" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Gnd_OUTPUT" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Vcc_BRAMDUMMY" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Vcc_CNTRLPIN" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Vcc_INPUT" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Vcc_VCCOUT" rev="9">
+<attrib name="value" value="2"/></item>
+</group>
+<group name="MiscellaneousStatistics">
+<item name="AVG_LUT_FAN_IN" rev="8">
+<attrib name="value" value="-1.000000"/></item>
+<item name="AVG_SIG_FANOUT" rev="8">
+<attrib name="value" value="-1.000000"/></item>
+<item name="PK_NUM_BONDED_IOBS" rev="8">
+<attrib name="value" value="29"/></item>
+<item name="PK_NUM_EQUIV_GATES" rev="8">
+<attrib name="value" value="65"/></item>
+<item name="PK_NUM_JTAG_GATES" rev="8">
+<attrib name="value" value="29"/></item>
+<item name="PK_NUM_XBZ_BLOCKRAMS" rev="8">
+<attrib name="value" value="1"/></item>
+<item name="PK_NUM_XBZ_GCLKS" rev="8">
+<attrib name="value" value="1"/></item>
+</group>
+</DesignStatistics>
+<DeviceUsage TimeStamp="Thu Nov 05 12:16:22 2009"><group name="SiteSummary">
+<item name="BUFGMUX" rev="9">
+<attrib name="total" value="1000000"/><attrib name="used" value="1"/></item>
+<item name="BUFGMUX_GCLKMUX" rev="9">
+<attrib name="total" value="1000000"/><attrib name="used" value="1"/></item>
+<item name="BUFGMUX_GCLK_BUFFER" rev="9">
+<attrib name="total" value="1000000"/><attrib name="used" value="1"/></item>
+<item name="IBUF" rev="9">
+<attrib name="total" value="1000000"/><attrib name="used" value="11"/></item>
+<item name="IBUF_INBUF" rev="9">
+<attrib name="total" value="1000000"/><attrib name="used" value="11"/></item>
+<item name="IBUF_PAD" rev="9">
+<attrib name="total" value="1000000"/><attrib name="used" value="11"/></item>
+<item name="IOB" rev="9">
+<attrib name="total" value="1000000"/><attrib name="used" value="18"/></item>
+<item name="IOB_OUTBUF" rev="9">
+<attrib name="total" value="1000000"/><attrib name="used" value="18"/></item>
+<item name="IOB_PAD" rev="9">
+<attrib name="total" value="1000000"/><attrib name="used" value="18"/></item>
+<item name="RAMB16" rev="9">
+<attrib name="total" value="1000000"/><attrib name="used" value="1"/></item>
+<item name="RAMB16_RAMB16" rev="9">
+<attrib name="total" value="1000000"/><attrib name="used" value="1"/></item>
+<item name="RAMB16_RAMB16A" rev="9">
+<attrib name="total" value="1000000"/><attrib name="used" value="1"/></item>
+</group>
+</DeviceUsage>
+<ReportConfigData TimeStamp="Thu Nov 05 12:16:22 2009"><group name="IBUF_PAD">
+<item name="IOATTRBOX" rev="9">
+<attrib name="LVCMOS25" value="11"/></item>
+</group>
+<group name="BUFGMUX_GCLKMUX">
+<item name="DISABLE_ATTR" rev="9">
+<attrib name="LOW" value="1"/></item>
+</group>
+<group name="RAMB16_RAMB16A">
+<item name="PORTA_ATTR" rev="9">
+<attrib name="1024X18" value="1"/></item>
+<item name="WRITEMODEA" rev="9">
+<attrib name="WRITE_FIRST" value="1"/></item>
+</group>
+<group name="IOB_PAD">
+<item name="DRIVEATTRBOX" rev="9">
+<attrib name="12" value="18"/></item>
+<item name="IOATTRBOX" rev="9">
+<attrib name="LVCMOS25" value="18"/></item>
+<item name="SLEW" rev="9">
+<attrib name="SLOW" value="18"/></item>
+</group>
+</ReportConfigData>
+<ReportPinData TimeStamp="Thu Nov 05 12:16:22 2009"><group name="IBUF_PAD">
+<item name="PAD" rev="9">
+<attrib name="value" value="11"/></item>
+</group>
+<group name="IBUF_INBUF">
+<item name="IN" rev="9">
+<attrib name="value" value="11"/></item>
+<item name="OUT" rev="9">
+<attrib name="value" value="11"/></item>
+</group>
+<group name="RAMB16">
+<item name="ADDRA10" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="ADDRA11" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="ADDRA12" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="ADDRA13" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="ADDRA4" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="ADDRA5" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="ADDRA6" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="ADDRA7" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="ADDRA8" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="ADDRA9" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="CLKA" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="DOA0" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="DOA1" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="DOA10" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="DOA11" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="DOA12" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="DOA13" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="DOA14" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="DOA15" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="DOA2" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="DOA3" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="DOA4" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="DOA5" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="DOA6" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="DOA7" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="DOA8" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="DOA9" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="DOPA0" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="DOPA1" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="ENA" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="SSRA" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="WEA" rev="9">
+<attrib name="value" value="1"/></item>
+</group>
+<group name="RAMB16_RAMB16">
+<item name="ADDRA" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="DIA" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="DOA" rev="9">
+<attrib name="value" value="1"/></item>
+</group>
+<group name="IOB_OUTBUF">
+<item name="IN" rev="9">
+<attrib name="value" value="18"/></item>
+<item name="OUT" rev="9">
+<attrib name="value" value="18"/></item>
+</group>
+<group name="BUFGMUX_GCLKMUX">
+<item name="I0" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="OUT" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="S" rev="9">
+<attrib name="value" value="1"/></item>
+</group>
+<group name="IBUF">
+<item name="I" rev="9">
+<attrib name="value" value="11"/></item>
+<item name="PAD" rev="9">
+<attrib name="value" value="11"/></item>
+</group>
+<group name="RAMB16_RAMB16A">
+<item name="ADDRA" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="ADDRA10" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="ADDRA11" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="ADDRA12" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="ADDRA13" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="ADDRA4" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="ADDRA5" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="ADDRA6" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="ADDRA7" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="ADDRA8" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="ADDRA9" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="CLKA" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="DIA" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="DOA" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="DOA0" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="DOA1" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="DOA10" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="DOA11" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="DOA12" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="DOA13" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="DOA14" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="DOA15" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="DOA2" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="DOA3" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="DOA4" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="DOA5" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="DOA6" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="DOA7" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="DOA8" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="DOA9" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="DOPA0" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="DOPA1" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="ENA" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="SSRA" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="WEA" rev="9">
+<attrib name="value" value="1"/></item>
+</group>
+<group name="IOB_PAD">
+<item name="PAD" rev="9">
+<attrib name="value" value="18"/></item>
+</group>
+<group name="IOB">
+<item name="O1" rev="9">
+<attrib name="value" value="18"/></item>
+<item name="PAD" rev="9">
+<attrib name="value" value="18"/></item>
+</group>
+<group name="BUFGMUX">
+<item name="I0" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="O" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="S" rev="9">
+<attrib name="value" value="1"/></item>
+</group>
+<group name="BUFGMUX_GCLK_BUFFER">
+<item name="IN" rev="9">
+<attrib name="value" value="1"/></item>
+<item name="OUT" rev="9">
+<attrib name="value" value="1"/></item>
+</group>
+</ReportPinData>
+<CmdHistory>
+</CmdHistory>
+</DeviceUsageSummary>

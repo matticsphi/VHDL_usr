@@ -1,0 +1,4 @@
+AR usr my_sr C:/USR/USR.vhd sub00/vhpl01 1294437213
+AR usr_tb_vhd behavior C:/USR/USR_tb.vhd sub00/vhpl03 1294437215
+EN usr_tb_vhd NULL C:/USR/USR_tb.vhd sub00/vhpl02 1294437214
+EN usr NULL C:/USR/USR.vhd sub00/vhpl00 1294437212

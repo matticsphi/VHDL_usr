@@ -1,0 +1,8 @@
+vhdl work "E:/8-bit Adder.vhd"
+vhdl work "ssegdec_4disp.vhd"
+vhdl work "Reg.vhd"
+vhdl work "Mux.vhd"
+vhdl work "clk_div_fs.vhd"
+vhdl work "FSM.vhd"
+vhdl work "Datapath.vhd"
+vhdl work "top.vhd"
